@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F11E18B7D382FDBD77EEF9C13AB1BC0C68726E75",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F11E18B7D382FDBD77EEF9C13AB1BC0C68726E75" : 0,
+    "7B5106CA889FBD912A099C18F9290532B9F09606" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A959199A-9D67-47D8-82C5-5C3F86423E8B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F11E18B7D382FDBD77EEF9C13AB1BC0C68726E75" : "AmericanMedical\/",
+    "7B5106CA889FBD912A099C18F9290532B9F09606" : "AmericanMedical\/AmericanMedical\/Common\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AmericanMedical",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AmericanMedical\/AmericanMedical.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/newself\/Common.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B5106CA889FBD912A099C18F9290532B9F09606"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.coding.net\/newself\/AmericanMedical.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F11E18B7D382FDBD77EEF9C13AB1BC0C68726E75"
+    }
+  ]
+}

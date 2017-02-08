@@ -1,0 +1,38 @@
+#import <UIKit/UIKit.h>
+
+#import "BCAliPayAdapter.h"
+#import "AlipaySDK.h"
+#import "APayAuthInfo.h"
+#import "BCPayObjects.h"
+#import "BeeCloud.h"
+#import "BeeCloudAdapterProtocol.h"
+#import "BCBaseReq.h"
+#import "BCPayPalReq.h"
+#import "BCPayPalVerifyReq.h"
+#import "BCPayReq.h"
+#import "BCQueryRefundReq.h"
+#import "BCQueryReq.h"
+#import "BCRefundStatusReq.h"
+#import "BCBaseResp.h"
+#import "BCPayResp.h"
+#import "BCQueryResp.h"
+#import "BCRefundStatusResp.h"
+#import "BCBaseResult.h"
+#import "BCQueryBillResult.h"
+#import "BCQueryRefundResult.h"
+#import "BCPayCache.h"
+#import "BCPayConstant.h"
+#import "BCPayUtil.h"
+#import "NSDictionary+Utils.h"
+#import "NSString+IsValid.h"
+#import "BeeCloudAdapter.h"
+#import "BCUnionPayAdapter.h"
+#import "UPPayPlugin.h"
+#import "UPPayPluginDelegate.h"
+#import "BCWXPayAdapter.h"
+#import "WXApi.h"
+#import "WXApiObject.h"
+
+FOUNDATION_EXPORT double BeeCloudVersionNumber;
+FOUNDATION_EXPORT const unsigned char BeeCloudVersionString[];
+

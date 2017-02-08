@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="启动页背景" translatesAutoresizingMaskIntoConstraints="NO" id="e9m-Ee-jx9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="启动页LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fa-Do-F0H">
+                                <rect key="frame" x="110" y="208" width="101" height="27"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="启动页文字" translatesAutoresizingMaskIntoConstraints="NO" id="55U-vA-M40">
+                                <rect key="frame" x="122" y="550" width="77" height="8"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e9m-Ee-jx9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DoH-4c-nca"/>
+                            <constraint firstItem="e9m-Ee-jx9" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="RL3-Z7-1H5"/>
+                            <constraint firstItem="e9m-Ee-jx9" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="UKf-ev-7Ww"/>
+                            <constraint firstItem="8Fa-Do-F0H" firstAttribute="centerX" secondItem="e9m-Ee-jx9" secondAttribute="centerX" id="cCQ-14-wV6"/>
+                            <constraint firstItem="e9m-Ee-jx9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dFj-wT-hzb"/>
+                            <constraint firstItem="8Fa-Do-F0H" firstAttribute="centerY" secondItem="e9m-Ee-jx9" secondAttribute="centerY" multiplier="374:480" id="fyv-p2-XWU"/>
+                            <constraint firstItem="55U-vA-M40" firstAttribute="bottom" secondItem="e9m-Ee-jx9" secondAttribute="bottom" constant="-10" id="kOF-G0-jEC"/>
+                            <constraint firstItem="55U-vA-M40" firstAttribute="centerX" secondItem="e9m-Ee-jx9" secondAttribute="centerX" id="w78-Jc-tzK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.266666666666666" y="355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="启动页LOGO" width="101" height="27"/>
+        <image name="启动页文字" width="77" height="8"/>
+        <image name="启动页背景" width="320" height="480"/>
+    </resources>
+</document>

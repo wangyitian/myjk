@@ -1,0 +1,1169 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03AD37457F07330AD4FFFBE2B5472324 /* BCUnionPayAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C79E274B1FB4F79EB4B075753A9108A /* BCUnionPayAdapter.m */; };
+		05FD554883FB1F1138605905BC8C474A /* NSString+IsValid.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C612C3D722BF8C9EB79776417651BA /* NSString+IsValid.m */; };
+		081A50535FCDF50D0118223459790167 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C53D2FDFBB53045069E475DA804BCF3 /* UIImageView+AFNetworking.m */; };
+		085DE31C0E4845F80469938FCE7159D1 /* BeeCloudAdapterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E9736567B3091B6598FF53364E60A41 /* BeeCloudAdapterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A0BC64C0D861CF559420EDD11D70174 /* BCQueryRefundResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E20277F86D12BA1E0FE599C229AD2D0C /* BCQueryRefundResult.m */; };
+		0CA20B2E984C27B0AE62C56B38C2F78D /* BCWXPayAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E0B3FAC0F23A4542C206DFCB09041E /* BCWXPayAdapter.m */; };
+		0D353E0AFA29C27EC3F5926DF58A3D29 /* BCQueryResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5166AFA15794F0B8B8B37FB2F5566 /* BCQueryResp.m */; };
+		0DBD2C8015A5C77B9759E1BF1F2B07D5 /* UPPayPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A4A5D5F3419493F3E9D5F41E506E545 /* UPPayPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EAB73EEFCC400FF585E747C0336F289 /* BCPayPalReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 857065805E8E556DC2E0E4D8A4AD5965 /* BCPayPalReq.m */; };
+		11AC5E1A651A5CF4847BDD8785793412 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040C09B94F19533FBD391278CB20185D /* AFNetworking.framework */; };
+		1389748BE24F9D2223187CB20D9A020C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F844AC5746F61AFD4931B2DFD14826 /* AFURLRequestSerialization.m */; };
+		139DA5F2AAAB4BE8A45FEBE13E90A668 /* BCBaseReq.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4456AD19CEFF505577349E1CEF2446 /* BCBaseReq.m */; };
+		144C675F56B7181C9E9CFFAF89BE325B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93915728E5F62B05E8CA568E2CA60835 /* Security.framework */; };
+		158609873E65AD9B695C0B2733752843 /* BeeCloud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A153155590E9A1C3D66981AEF16BE37 /* BeeCloud-dummy.m */; };
+		17141B2540597E1DC6398C3EA7A275D2 /* APayAuthInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F0C47EA3E6A47BCCDBD5987DCD6180D9 /* APayAuthInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A15E1DAB1BF63371AE5ADFAED9169E5 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CB064014A640E6D4C6B7230F7C6260 /* UIRefreshControl+AFNetworking.m */; };
+		1EA06503C7AF1CA5E13950E3E7D7830E /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA736D03B81F25E7C42AE3702B5F3D74 /* AFNetworkActivityIndicatorManager.m */; };
+		224E4F478CFE353BD010A582ADCB13FD /* BCQueryBillResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B7D7FDF32563F7984C2DE31459C06C /* BCQueryBillResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24A14FC9BCB0123819FCD7347A5894A6 /* BCQueryReq.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF4A4C975BDFCCC01E29FC1387796C2 /* BCQueryReq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25D2434B0F2767908A46C184C3BA60E3 /* BeeCloudAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C3FBCAA68E19F59282ECC8EA1F153F /* BeeCloudAdapter.m */; };
+		28F9833C7823849832C33AA3541DFABB /* BCPayReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D3046CA65A5DF4389DFEEE11CC3793 /* BCPayReq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		290353FFD70C6FED0E88244849792541 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FB377F813CD6C642557D1B62F8FA0F /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		293053E8CA44089B164F6510AA24FF44 /* NSString+IsValid.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF3A191F75D75017CAE67A6EC1DF0E4 /* NSString+IsValid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E642303C80D776CB7A90752852DFDAD /* BCPayConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = B1431CE281BBB5CA0EA02846330BC4AD /* BCPayConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F6477CCF6001A9C2F86B7F73EF47EF9 /* BCPayCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 477C6C57ABA593B7BE3006BC62FD265E /* BCPayCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32BE0FB08D9ECD2974197D862E320E36 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BEC4E1248E7DDDC38922B2551B0E95A3 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34BEE08ED8F8B9B3B939D4D732CFBEFE /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DF7F179FB7EAAAEA506DE971CA8E21 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A7FE81FF3C97DDFA9F5D7B692369683 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8B62834E418D8C3C6049C82DB8E70A /* SystemConfiguration.framework */; };
+		3BB95B3AEE5AF8990BCA530649EF3C39 /* BeeCloud-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0899C4C593E45AEFEC69F9CAD5C3A23 /* BeeCloud-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		401C2DDD1436B4AD6B3A43D775389EA4 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AF3977788ECC68AC5FDFE6C54A44F8 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		410241BC8AFA28564F36E5F81384FF88 /* BCPayResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 05359565359F85A13D989E0E870E953C /* BCPayResp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4126FC06B09C1514C4623BEF344EEDF2 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 958AB5108110F96D3A97FECA151AC392 /* AFHTTPRequestOperationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		425BF0587AAD6FECE1003741206D3934 /* BCBaseReq.h in Headers */ = {isa = PBXBuildFile; fileRef = C222E511E90C17EA50C1520D3CB166AD /* BCBaseReq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43BC8D2611C04A47C0BE9FFB228E07A5 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C70542F49293F843CAE1236F15AE2AE4 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43E368E6ADA620DC6FC171E59708036A /* BCPayPalReq.h in Headers */ = {isa = PBXBuildFile; fileRef = D4CA7FA11033348AFF58FE0CE2A6FF87 /* BCPayPalReq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		464D289BF0E35718D668FE869BA824F9 /* BCBaseResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 85D829ECBF82CD4EABC359F8F752173D /* BCBaseResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E32C6B26518F18DC4AB3E225B86EE88 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 313FDC4A1286F1821A2D9E0817BDC08F /* AFSecurityPolicy.m */; };
+		4E94B8F460BF431A50D94814F7C8AF61 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B8E0A9F505EBD08EB8B0DE9D49B629 /* UIActivityIndicatorView+AFNetworking.m */; };
+		4F093F6FBA6E6B060CF66145CF214E14 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ACB2F11707718E8009F455769D6EC95 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FF9D26E25144C2E2E057AA156542AFA /* BCRefundStatusResp.h in Headers */ = {isa = PBXBuildFile; fileRef = EDEE70ABF3B1182C5D60EFEE353AABB8 /* BCRefundStatusResp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		568533AE74F54F587173CEBAC7FAB856 /* BCRefundStatusReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 45729CE6DF76748A491F304A8E173238 /* BCRefundStatusReq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56C8D4F00869E61F210A24E0EE8F3A13 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA384043130A312C8E166F7866F7196 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		574B78A583B9B00B973B127AA6072B03 /* BCQueryRefundReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8DC42E65990C5F2D598FD81C5A62E2 /* BCQueryRefundReq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DFB5DBB9425596C825FE23795A34FCA /* BCQueryResp.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D665FD042ADD22B5582DA3B0C1EB46 /* BCQueryResp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E6E6E5EA2B253B4BDB1078C9F174A81 /* BCPayPalVerifyReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BCC0EF633C92F548602907110A20A3 /* BCPayPalVerifyReq.m */; };
+		6507275502D7CE823A692FC6414AA3EC /* AlipaySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 82332AA70165901593F18760B9ECE18F /* AlipaySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6899C7BC89BF5CF0D24779B88B6ABED2 /* BCQueryRefundReq.m in Sources */ = {isa = PBXBuildFile; fileRef = A90542915047ADFCE6609F89B0C10A7E /* BCQueryRefundReq.m */; };
+		68F25493DF29423FEA798D2247A6C918 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 73785F08E96AAEC4563C72B6FB07CB7A /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6954405AA25870FAD9E9547F42A664E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE57C56C2D8DAD8CA2D943098456442 /* Foundation.framework */; };
+		6FDE95FB21B7F5E1EC7A9F49489DAC62 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 92BB7C14D2435931AA0938904CBAE47A /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70C7A4B0AC0A140FA7CAB853622BC57E /* BCRefundStatusReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 179A91FE4331EA6D53B0E1D2BF16A239 /* BCRefundStatusReq.m */; };
+		746B09C88DAFAE70B82DE4C4DF47AD70 /* UPPayPluginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1ED0F5A6E397257C1E2FF4D4FFC89A /* UPPayPluginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758BCFF2FDABA1D9861B3DDC0537C2AE /* BeeCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7917858CC004A01BAEFC036F06341E /* BeeCloud.m */; };
+		76C1FA68EFCD242119622AE2CEB4D24F /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 603332537CD985E9A2636D7F073E135C /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76C72D9FA8C86EBBC7E3E4AF7F0B4BB5 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF5638FBAB763C6AD071844CB20A579 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7999F436677B92F6DDA1C3D45B67762F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AE5C3FC6AA5E40C0B2E5128A48AD57A5 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79CD07A0B11EB766341D74B2AAA283E5 /* BeeCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC051E6DB8700A5B6A6822D8FE38131 /* BeeCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79D287D48B2A81896F365CA21F0B27D6 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8083AD2525C016DFD9DCFF1BC08EA7F4 /* UIWebView+AFNetworking.m */; };
+		7A7B223B5CF2574CA3C505619D7D495F /* BCPayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E587226E8E53A72029EFA6C73A8130 /* BCPayUtil.m */; };
+		7DF045FC13832C740EE2B5F422CADF13 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 104997D8C405D77CE09527A820348C3F /* NSDictionary+Utils.m */; };
+		856250C3A60A87C9656DFA0A2E6A104F /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 593F777C333EDF462A5057EB5E22B2EC /* WXApiObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B376EFFB43B9262E2DCE7B12414F0BC /* BCPayUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A0960A6E468E69ABEBEF04DE7D4F3E0 /* BCPayUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FBC9D19F54D51D40F5239A5D85F7EBE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9E7DB83C31EB1BD096CC9BE86AFE91 /* QuartzCore.framework */; };
+		945C9834347A969CDD4FB9A5AB9FF0E0 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD6027F91BC3FBAA8F3F38CA643601 /* AFURLSessionManager.m */; };
+		96247D22CC837A06A450BB49F1D2F79E /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F462955298F288517DDAC84D5D8B9B13 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9760A35EA7E60AE5A0648B1F5B306F55 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F938FBC07246FD0C88E401F8A1C41C /* WXApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AB021B020F0FF36FDCCBDD954F31F11 /* BCUnionPayAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A2C2186B7B9905825A3EC0C74CD262 /* BCUnionPayAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C083DDF43AFC5E141DDEA3E5EB9D7A1 /* BCPayPalVerifyReq.h in Headers */ = {isa = PBXBuildFile; fileRef = E3559DD6AD01CDC69385A46059140A48 /* BCPayPalVerifyReq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C6E0E56B52CA1D3B3A0B703770CAE28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8639406BAF86B8E20D9E2587BA912303 /* CoreGraphics.framework */; };
+		9E795055729E8F398250A5687BB00AE2 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A46D0574388B8FBDFAD992CB697B01FC /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A00EF7ACB0BD16655B32ADF4AEDCEDC4 /* BCBaseResp.m in Sources */ = {isa = PBXBuildFile; fileRef = 008E5926B06B111312CFEE597B50183A /* BCBaseResp.m */; };
+		A466A330F8C2180CAA82861E9C86C82D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE57C56C2D8DAD8CA2D943098456442 /* Foundation.framework */; };
+		AE256BCFD1E86977D2D5ADE952CFE9A5 /* BCBaseResp.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C989FA2D781D0E29A531AB642000D6 /* BCBaseResp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFF7C2B840919D93545876690B394661 /* BCQueryReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B29D4801087A7A406BEB4758B5A40A4F /* BCQueryReq.m */; };
+		B42A49260E02658534FF92164B6FC311 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A3B7E0279BE890C3DD0F4D61486851E /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B62841EEC7B9C6B13D52420CF767DC61 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		B6CFD22D570FD7871694702CC65C4859 /* BCPayCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A23A5FC8E70C60B2E94E3AE1C4A97229 /* BCPayCache.m */; };
+		B7AA002E6E01B34E20ACDE421AB110FC /* BCPayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E8BB95C27CDC0BB5DDB5018BF1A99 /* BCPayResp.m */; };
+		BB82DC2891A35AC22DD6D5CE4CAE4364 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 264C736FB8ED71C74C75710A131D29FF /* UIButton+AFNetworking.m */; };
+		C02EB2D8BC024DC2A9A9E3B37D1A6B0B /* BCPayReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 3776BC018D55C0116F909210AF08B3BD /* BCPayReq.m */; };
+		C087B9B3A493BC8232CBA4DB1CB47A67 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE0376EAF852153256FD2B540969DA /* AFNetworkReachabilityManager.m */; };
+		C51B96A7E543F72CD7925968E35DC041 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBF1636A3362B00E8E18932D496AA08 /* AFNetworking-dummy.m */; };
+		C6CDABE1AEBB5DC4A35A6B221BB98D13 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A47AF006870DD0EB9E67625B4EF4BC46 /* AFURLConnectionOperation.m */; };
+		C70AC3CB2D21E9466D55F37D6167DBA5 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A2309B7AB77E828FD0A379B5F3861C46 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7B655603FB1089A5E2D28FCE12DF12F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B484460ABB36308AF58BDC3A6F2A85B2 /* AFHTTPRequestOperationManager.m */; };
+		C92FFCE3C06282C2D08A98524079060D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE57C56C2D8DAD8CA2D943098456442 /* Foundation.framework */; };
+		CA29B7843B92E4C897CC9DC085A764E2 /* BeeCloudAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2846872DD92D69614D8B6AA53CA5AA59 /* BeeCloudAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEDFE191DF66B8884828359B3494F8E9 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 08145B03478DDD2DFD14401234738187 /* UIAlertView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF051D17275C20E0FBF5736E3C8A0573 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B0ADD225EF38A67AEABF9AB384293E /* UIProgressView+AFNetworking.m */; };
+		D1CD80193235F94027F4182A056190A6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93915728E5F62B05E8CA568E2CA60835 /* Security.framework */; };
+		D343C6C3F34143E49A2E7E582D1C2ADC /* NSDictionary+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2DC18DA4DE33B37BB415AB563EA42D /* NSDictionary+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4DCEA7A6BD3A09085EA0FFA46660476 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D500312D44F1ED8CBBA8F92E0C1B2E2F /* BCRefundStatusResp.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C1B04B678447E9E914C21AAD80C698 /* BCRefundStatusResp.m */; };
+		D7C1594DC6A0E38E33E8971C288A9F82 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A91422BE805B8DAF604C1BA249E4C3 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D86913E8F8A1CA01D792A1DFD3AE671C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3245501B51B185F649B41FD8829C8132 /* AFHTTPSessionManager.m */; };
+		D94B3232F8E6FE30D198E2CA66BD2E62 /* BCPayObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = F361FAEE2FB4C61AFD6C2369620C3E4B /* BCPayObjects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB840EF5FD9645993A399CDE849E784C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0005C932184BDD7268370DB24067B857 /* AFURLResponseSerialization.m */; };
+		DF4112FFA156222BF7053EF22A8827B9 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9FFFF59742A781FF93D075C7626B34 /* AFHTTPRequestOperation.m */; };
+		DFC29AA19504EF95C8902348017273A8 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FE050D1CAFF1B2291DCDDCB0D0F94A1 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E13B595DBD5150D4B49772197400C99F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B9EB4A770A3F4E34E5E3624885E0A8 /* MobileCoreServices.framework */; };
+		E71A1BD64D6186353DBFF02B63A60E03 /* BCQueryBillResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D00CD7E5D1E01DB1D560C5A415AEB9B0 /* BCQueryBillResult.m */; };
+		E7FA21C38D6A1CB113BE2DA22E73B845 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A575A654A37690279EB96265A5E9DC4 /* UIAlertView+AFNetworking.m */; };
+		EF8831E051DB75235CC761A963859008 /* BCAliPayAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F57F11B371485B7643517D464173F16 /* BCAliPayAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFC4F73DB58A94143AFD70BE5F8BB37B /* BCAliPayAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8EE80FB0E6C6BADC9460B80EBF0FCC /* BCAliPayAdapter.m */; };
+		F2947623DD52D644383C8F0FD2A4856E /* BCWXPayAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E24AD8E8599293BB0C4258341DC5D77B /* BCWXPayAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2E9945B7494E20ED7DC4720A2B8CDC9 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDB98260A78D2DEE0D43ED75C58DD6B /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7790343980CB5E0C1CBA926C6711FFA /* BCQueryRefundResult.h in Headers */ = {isa = PBXBuildFile; fileRef = A9EEF9EBBEAB7F14DCFEA762E51A952B /* BCQueryRefundResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE139020614C39C2DE34AA9AE9B87C1A /* BCBaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 359164194979888A466B5F835CC353D8 /* BCBaseResult.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AAAB34C31F0885CBD344F2AA51A1424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B76CBFD05076C4B4D404123D165194AC;
+			remoteInfo = BeeCloud;
+		};
+		B4A0397F5EC26D6385A0228215F9EBC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4878C70B21CA37D7CB8A476BF986741B;
+			remoteInfo = AFNetworking;
+		};
+		DAB1914EC76A73A674CB81A3FBE1BD76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4878C70B21CA37D7CB8A476BF986741B;
+			remoteInfo = AFNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0005C932184BDD7268370DB24067B857 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		008E5926B06B111312CFEE597B50183A /* BCBaseResp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCBaseResp.m; path = BCPaySDK/BeeCloud/Classes/BCResponse/BCBaseResp.m; sourceTree = "<group>"; };
+		03C3FBCAA68E19F59282ECC8EA1F153F /* BeeCloudAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BeeCloudAdapter.m; path = BCPaySDK/BeeCloud/Protocol/BeeCloudAdapter.m; sourceTree = "<group>"; };
+		040C09B94F19533FBD391278CB20185D /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B7D7FDF32563F7984C2DE31459C06C /* BCQueryBillResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCQueryBillResult.h; path = BCPaySDK/BeeCloud/Classes/BCResults/BCQueryBillResult.h; sourceTree = "<group>"; };
+		05359565359F85A13D989E0E870E953C /* BCPayResp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCPayResp.h; path = BCPaySDK/BeeCloud/Classes/BCResponse/BCPayResp.h; sourceTree = "<group>"; };
+		08145B03478DDD2DFD14401234738187 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		08436F3C66356A63B01581D1E28F2782 /* libUPPayPlugin.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libUPPayPlugin.a; path = BCPaySDK/Channel/UnionPay/libUPPayPlugin.a; sourceTree = "<group>"; };
+		0A153155590E9A1C3D66981AEF16BE37 /* BeeCloud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BeeCloud-dummy.m"; sourceTree = "<group>"; };
+		0AE5166AFA15794F0B8B8B37FB2F5566 /* BCQueryResp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCQueryResp.m; path = BCPaySDK/BeeCloud/Classes/BCResponse/BCQueryResp.m; sourceTree = "<group>"; };
+		0CF3A191F75D75017CAE67A6EC1DF0E4 /* NSString+IsValid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+IsValid.h"; path = "BCPaySDK/BeeCloud/Internal/NSString+IsValid.h"; sourceTree = "<group>"; };
+		0E3BAAE27CCD3EB9720CAC60440B6A95 /* BeeCloud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BeeCloud.xcconfig; sourceTree = "<group>"; };
+		104997D8C405D77CE09527A820348C3F /* NSDictionary+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Utils.m"; path = "BCPaySDK/BeeCloud/Internal/NSDictionary+Utils.m"; sourceTree = "<group>"; };
+		179A91FE4331EA6D53B0E1D2BF16A239 /* BCRefundStatusReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCRefundStatusReq.m; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCRefundStatusReq.m; sourceTree = "<group>"; };
+		1A3B7E0279BE890C3DD0F4D61486851E /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		1A575A654A37690279EB96265A5E9DC4 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		1A8DC42E65990C5F2D598FD81C5A62E2 /* BCQueryRefundReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCQueryRefundReq.h; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCQueryRefundReq.h; sourceTree = "<group>"; };
+		264C736FB8ED71C74C75710A131D29FF /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		2846872DD92D69614D8B6AA53CA5AA59 /* BeeCloudAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeeCloudAdapter.h; path = BCPaySDK/BeeCloud/Protocol/BeeCloudAdapter.h; sourceTree = "<group>"; };
+		29B0ADD225EF38A67AEABF9AB384293E /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		2FE050D1CAFF1B2291DCDDCB0D0F94A1 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		313FDC4A1286F1821A2D9E0817BDC08F /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		3245501B51B185F649B41FD8829C8132 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		32E0B3FAC0F23A4542C206DFCB09041E /* BCWXPayAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCWXPayAdapter.m; path = BCPaySDK/Channel/WXPay/BCWXPayAdapter/BCWXPayAdapter.m; sourceTree = "<group>"; };
+		359164194979888A466B5F835CC353D8 /* BCBaseResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCBaseResult.m; path = BCPaySDK/BeeCloud/Classes/BCResults/BCBaseResult.m; sourceTree = "<group>"; };
+		3776BC018D55C0116F909210AF08B3BD /* BCPayReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCPayReq.m; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCPayReq.m; sourceTree = "<group>"; };
+		38BCC0EF633C92F548602907110A20A3 /* BCPayPalVerifyReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCPayPalVerifyReq.m; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCPayPalVerifyReq.m; sourceTree = "<group>"; };
+		3AA384043130A312C8E166F7866F7196 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		3F57F11B371485B7643517D464173F16 /* BCAliPayAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCAliPayAdapter.h; path = BCPaySDK/Channel/AliPay/BCAliPayAdapter/BCAliPayAdapter.h; sourceTree = "<group>"; };
+		4225FC7DF2E9D3C6389F8D643E608A1B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45729CE6DF76748A491F304A8E173238 /* BCRefundStatusReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCRefundStatusReq.h; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCRefundStatusReq.h; sourceTree = "<group>"; };
+		477C6C57ABA593B7BE3006BC62FD265E /* BCPayCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCPayCache.h; path = BCPaySDK/BeeCloud/Internal/BCPayCache.h; sourceTree = "<group>"; };
+		4A1A6349893BCA06B5E1A241FDAA9A3C /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		4ACB2F11707718E8009F455769D6EC95 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		4DA621B4F4ACD646A1F6E22E3575EBB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E603B1FD158C47C1C711AEBC33B9094 /* BeeCloud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BeeCloud-prefix.pch"; sourceTree = "<group>"; };
+		4F1ED0F5A6E397257C1E2FF4D4FFC89A /* UPPayPluginDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UPPayPluginDelegate.h; path = BCPaySDK/Channel/UnionPay/UPPayPluginDelegate.h; sourceTree = "<group>"; };
+		56D3046CA65A5DF4389DFEEE11CC3793 /* BCPayReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCPayReq.h; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCPayReq.h; sourceTree = "<group>"; };
+		56FB377F813CD6C642557D1B62F8FA0F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		593F777C333EDF462A5057EB5E22B2EC /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = BCPaySDK/Channel/WXPay/WXApiObject.h; sourceTree = "<group>"; };
+		5C79E274B1FB4F79EB4B075753A9108A /* BCUnionPayAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCUnionPayAdapter.m; path = BCPaySDK/Channel/UnionPay/BCUnionPayAdapter/BCUnionPayAdapter.m; sourceTree = "<group>"; };
+		603332537CD985E9A2636D7F073E135C /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		61B9EB4A770A3F4E34E5E3624885E0A8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		62F844AC5746F61AFD4931B2DFD14826 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		6A4A5D5F3419493F3E9D5F41E506E545 /* UPPayPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UPPayPlugin.h; path = BCPaySDK/Channel/UnionPay/UPPayPlugin.h; sourceTree = "<group>"; };
+		6E9736567B3091B6598FF53364E60A41 /* BeeCloudAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeeCloudAdapterProtocol.h; path = BCPaySDK/BeeCloud/BeeCloudAdapterProtocol.h; sourceTree = "<group>"; };
+		73785F08E96AAEC4563C72B6FB07CB7A /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		79543F5F35BE038C077701E6A8AD2D5D /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7A9FFFF59742A781FF93D075C7626B34 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		8083AD2525C016DFD9DCFF1BC08EA7F4 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		82332AA70165901593F18760B9ECE18F /* AlipaySDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlipaySDK.h; path = BCPaySDK/Channel/AliPay/AlipaySDK.h; sourceTree = "<group>"; };
+		82E4F07133D9753BF6053C88F7DF3779 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		857065805E8E556DC2E0E4D8A4AD5965 /* BCPayPalReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCPayPalReq.m; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCPayPalReq.m; sourceTree = "<group>"; };
+		85D829ECBF82CD4EABC359F8F752173D /* BCBaseResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCBaseResult.h; path = BCPaySDK/BeeCloud/Classes/BCResults/BCBaseResult.h; sourceTree = "<group>"; };
+		8639406BAF86B8E20D9E2587BA912303 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		87F938FBC07246FD0C88E401F8A1C41C /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = BCPaySDK/Channel/WXPay/WXApi.h; sourceTree = "<group>"; };
+		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8A0960A6E468E69ABEBEF04DE7D4F3E0 /* BCPayUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCPayUtil.h; path = BCPaySDK/BeeCloud/Internal/BCPayUtil.h; sourceTree = "<group>"; };
+		92BB7C14D2435931AA0938904CBAE47A /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		92BE0376EAF852153256FD2B540969DA /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		93915728E5F62B05E8CA568E2CA60835 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		94A2C2186B7B9905825A3EC0C74CD262 /* BCUnionPayAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCUnionPayAdapter.h; path = BCPaySDK/Channel/UnionPay/BCUnionPayAdapter/BCUnionPayAdapter.h; sourceTree = "<group>"; };
+		958AB5108110F96D3A97FECA151AC392 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		9C53D2FDFBB53045069E475DA804BCF3 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		9CDB98260A78D2DEE0D43ED75C58DD6B /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		9E7917858CC004A01BAEFC036F06341E /* BeeCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BeeCloud.m; path = BCPaySDK/BeeCloud/BeeCloud.m; sourceTree = "<group>"; };
+		9F2DC18DA4DE33B37BB415AB563EA42D /* NSDictionary+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Utils.h"; path = "BCPaySDK/BeeCloud/Internal/NSDictionary+Utils.h"; sourceTree = "<group>"; };
+		A2309B7AB77E828FD0A379B5F3861C46 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		A23A5FC8E70C60B2E94E3AE1C4A97229 /* BCPayCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCPayCache.m; path = BCPaySDK/BeeCloud/Internal/BCPayCache.m; sourceTree = "<group>"; };
+		A46D0574388B8FBDFAD992CB697B01FC /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		A47AF006870DD0EB9E67625B4EF4BC46 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		A677CA357017168DA0625B8C6739843C /* BeeCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BeeCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90542915047ADFCE6609F89B0C10A7E /* BCQueryRefundReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCQueryRefundReq.m; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCQueryRefundReq.m; sourceTree = "<group>"; };
+		A9EEF9EBBEAB7F14DCFEA762E51A952B /* BCQueryRefundResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCQueryRefundResult.h; path = BCPaySDK/BeeCloud/Classes/BCResults/BCQueryRefundResult.h; sourceTree = "<group>"; };
+		ADADC8986466A121C770BC57F459BD08 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = BCPaySDK/Channel/WXPay/libWeChatSDK.a; sourceTree = "<group>"; };
+		AE5C3FC6AA5E40C0B2E5128A48AD57A5 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		B1431CE281BBB5CA0EA02846330BC4AD /* BCPayConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCPayConstant.h; path = BCPaySDK/BeeCloud/Internal/BCPayConstant.h; sourceTree = "<group>"; };
+		B1B8E0A9F505EBD08EB8B0DE9D49B629 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		B29D4801087A7A406BEB4758B5A40A4F /* BCQueryReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCQueryReq.m; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCQueryReq.m; sourceTree = "<group>"; };
+		B484460ABB36308AF58BDC3A6F2A85B2 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		B6C1B04B678447E9E914C21AAD80C698 /* BCRefundStatusResp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCRefundStatusResp.m; path = BCPaySDK/BeeCloud/Classes/BCResponse/BCRefundStatusResp.m; sourceTree = "<group>"; };
+		BA4456AD19CEFF505577349E1CEF2446 /* BCBaseReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCBaseReq.m; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCBaseReq.m; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA736D03B81F25E7C42AE3702B5F3D74 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		BBBF1636A3362B00E8E18932D496AA08 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		BCC051E6DB8700A5B6A6822D8FE38131 /* BeeCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeeCloud.h; path = BCPaySDK/BeeCloud/BeeCloud.h; sourceTree = "<group>"; };
+		BD9E7DB83C31EB1BD096CC9BE86AFE91 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BEC4E1248E7DDDC38922B2551B0E95A3 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		C0035B676FE5D5FF6B18217F9DDB52CE /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07E8BB95C27CDC0BB5DDB5018BF1A99 /* BCPayResp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCPayResp.m; path = BCPaySDK/BeeCloud/Classes/BCResponse/BCPayResp.m; sourceTree = "<group>"; };
+		C0CB064014A640E6D4C6B7230F7C6260 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		C1AF3977788ECC68AC5FDFE6C54A44F8 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		C222E511E90C17EA50C1520D3CB166AD /* BCBaseReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCBaseReq.h; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCBaseReq.h; sourceTree = "<group>"; };
+		C70542F49293F843CAE1236F15AE2AE4 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		C8C612C3D722BF8C9EB79776417651BA /* NSString+IsValid.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+IsValid.m"; path = "BCPaySDK/BeeCloud/Internal/NSString+IsValid.m"; sourceTree = "<group>"; };
+		CAF4A4C975BDFCCC01E29FC1387796C2 /* BCQueryReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCQueryReq.h; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCQueryReq.h; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		D00CD7E5D1E01DB1D560C5A415AEB9B0 /* BCQueryBillResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCQueryBillResult.m; path = BCPaySDK/BeeCloud/Classes/BCResults/BCQueryBillResult.m; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0A91422BE805B8DAF604C1BA249E4C3 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		D2FD6027F91BC3FBAA8F3F38CA643601 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		D4C989FA2D781D0E29A531AB642000D6 /* BCBaseResp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCBaseResp.h; path = BCPaySDK/BeeCloud/Classes/BCResponse/BCBaseResp.h; sourceTree = "<group>"; };
+		D4CA7FA11033348AFF58FE0CE2A6FF87 /* BCPayPalReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCPayPalReq.h; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCPayPalReq.h; sourceTree = "<group>"; };
+		D8AB7D68908EA103E49087EB6C1D0AEE /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = BCPaySDK/Channel/AliPay/AlipaySDK.framework; sourceTree = "<group>"; };
+		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		DEF736DF979EE9DB7E60DFA4AAC44E91 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		DFF5638FBAB763C6AD071844CB20A579 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		E0899C4C593E45AEFEC69F9CAD5C3A23 /* BeeCloud-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BeeCloud-umbrella.h"; sourceTree = "<group>"; };
+		E20277F86D12BA1E0FE599C229AD2D0C /* BCQueryRefundResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCQueryRefundResult.m; path = BCPaySDK/BeeCloud/Classes/BCResults/BCQueryRefundResult.m; sourceTree = "<group>"; };
+		E24AD8E8599293BB0C4258341DC5D77B /* BCWXPayAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCWXPayAdapter.h; path = BCPaySDK/Channel/WXPay/BCWXPayAdapter/BCWXPayAdapter.h; sourceTree = "<group>"; };
+		E2DF7F179FB7EAAAEA506DE971CA8E21 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		E3559DD6AD01CDC69385A46059140A48 /* BCPayPalVerifyReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCPayPalVerifyReq.h; path = BCPaySDK/BeeCloud/Classes/BCRequest/BCPayPalVerifyReq.h; sourceTree = "<group>"; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E587226E8E53A72029EFA6C73A8130 /* BCPayUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCPayUtil.m; path = BCPaySDK/BeeCloud/Internal/BCPayUtil.m; sourceTree = "<group>"; };
+		EA8EE80FB0E6C6BADC9460B80EBF0FCC /* BCAliPayAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BCAliPayAdapter.m; path = BCPaySDK/Channel/AliPay/BCAliPayAdapter/BCAliPayAdapter.m; sourceTree = "<group>"; };
+		EC8B62834E418D8C3C6049C82DB8E70A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		EDEE70ABF3B1182C5D60EFEE353AABB8 /* BCRefundStatusResp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCRefundStatusResp.h; path = BCPaySDK/BeeCloud/Classes/BCResponse/BCRefundStatusResp.h; sourceTree = "<group>"; };
+		EFE57C56C2D8DAD8CA2D943098456442 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F0C47EA3E6A47BCCDBD5987DCD6180D9 /* APayAuthInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APayAuthInfo.h; path = BCPaySDK/Channel/AliPay/APayAuthInfo.h; sourceTree = "<group>"; };
+		F361FAEE2FB4C61AFD6C2369620C3E4B /* BCPayObjects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCPayObjects.h; path = BCPaySDK/BeeCloud/BCPayObjects.h; sourceTree = "<group>"; };
+		F432C153A3F2607FD6C275DDFAEEA14E /* BeeCloud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BeeCloud.modulemap; sourceTree = "<group>"; };
+		F462955298F288517DDAC84D5D8B9B13 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		F5D665FD042ADD22B5582DA3B0C1EB46 /* BCQueryResp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BCQueryResp.h; path = BCPaySDK/BeeCloud/Classes/BCResponse/BCQueryResp.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5968C9654432843B8CE7143487701D1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A466A330F8C2180CAA82861E9C86C82D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60C3D26E2C8843CA90222B621C57A0DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6E0E56B52CA1D3B3A0B703770CAE28 /* CoreGraphics.framework in Frameworks */,
+				C92FFCE3C06282C2D08A98524079060D /* Foundation.framework in Frameworks */,
+				E13B595DBD5150D4B49772197400C99F /* MobileCoreServices.framework in Frameworks */,
+				D1CD80193235F94027F4182A056190A6 /* Security.framework in Frameworks */,
+				3A7FE81FF3C97DDFA9F5D7B692369683 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B8A67C8E097C6AFE99E76B97F54E157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AC5E1A651A5CF4847BDD8785793412 /* AFNetworking.framework in Frameworks */,
+				6954405AA25870FAD9E9547F42A664E2 /* Foundation.framework in Frameworks */,
+				8FBC9D19F54D51D40F5239A5D85F7EBE /* QuartzCore.framework in Frameworks */,
+				144C675F56B7181C9E9CFFAF89BE325B /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C3BF0503FEC375FB0AD4F8C9FBA7131 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E193CB99A13E496F4513EA149D4048B6 /* AFNetworking */,
+				EC37D0696ACE6C81A1224C641CB433E6 /* BeeCloud */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		16972B5EE4237759609E58DF6C877AE7 /* UnionPay */ = {
+			isa = PBXGroup;
+			children = (
+				94A2C2186B7B9905825A3EC0C74CD262 /* BCUnionPayAdapter.h */,
+				5C79E274B1FB4F79EB4B075753A9108A /* BCUnionPayAdapter.m */,
+				6A4A5D5F3419493F3E9D5F41E506E545 /* UPPayPlugin.h */,
+				4F1ED0F5A6E397257C1E2FF4D4FFC89A /* UPPayPluginDelegate.h */,
+				8850D42F992FA29F246178F3F7AD9555 /* Frameworks */,
+			);
+			name = UnionPay;
+			sourceTree = "<group>";
+		};
+		18A10863D9139568D2B86FBAB40C5E71 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				73785F08E96AAEC4563C72B6FB07CB7A /* AFSecurityPolicy.h */,
+				313FDC4A1286F1821A2D9E0817BDC08F /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		34BFD18C50E05D2D9174FE6545AA6FDE /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				D0A91422BE805B8DAF604C1BA249E4C3 /* AFURLRequestSerialization.h */,
+				62F844AC5746F61AFD4931B2DFD14826 /* AFURLRequestSerialization.m */,
+				603332537CD985E9A2636D7F073E135C /* AFURLResponseSerialization.h */,
+				0005C932184BDD7268370DB24067B857 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		46D66CCD673E43FA04AD2B41335E6D9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8AB7D68908EA103E49087EB6C1D0AEE /* AlipaySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48BBB5BD91FEC906EA7D5DDBBD202084 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				C70542F49293F843CAE1236F15AE2AE4 /* AFHTTPSessionManager.h */,
+				3245501B51B185F649B41FD8829C8132 /* AFHTTPSessionManager.m */,
+				2FE050D1CAFF1B2291DCDDCB0D0F94A1 /* AFURLSessionManager.h */,
+				D2FD6027F91BC3FBAA8F3F38CA643601 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		4DD2382CFE974173571DF1A6FDDC0CFB /* Wx */ = {
+			isa = PBXGroup;
+			children = (
+				E24AD8E8599293BB0C4258341DC5D77B /* BCWXPayAdapter.h */,
+				32E0B3FAC0F23A4542C206DFCB09041E /* BCWXPayAdapter.m */,
+				87F938FBC07246FD0C88E401F8A1C41C /* WXApi.h */,
+				593F777C333EDF462A5057EB5E22B2EC /* WXApiObject.h */,
+				B66E020BD822AFC31001BC7F61F382C2 /* Frameworks */,
+			);
+			name = Wx;
+			sourceTree = "<group>";
+		};
+		5323EAA989AC5BFAB8B9DF1B7786B357 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				79543F5F35BE038C077701E6A8AD2D5D /* AFNetworking.modulemap */,
+				DEF736DF979EE9DB7E60DFA4AAC44E91 /* AFNetworking.xcconfig */,
+				BBBF1636A3362B00E8E18932D496AA08 /* AFNetworking-dummy.m */,
+				4A1A6349893BCA06B5E1A241FDAA9A3C /* AFNetworking-prefix.pch */,
+				E2DF7F179FB7EAAAEA506DE971CA8E21 /* AFNetworking-umbrella.h */,
+				4225FC7DF2E9D3C6389F8D643E608A1B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		5483655F255B7FF51B8F6FC6D13F1A98 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				4ACB2F11707718E8009F455769D6EC95 /* AFNetworkReachabilityManager.h */,
+				92BE0376EAF852153256FD2B540969DA /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		5491C968E45D924FB71BBDB8B838F133 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8639406BAF86B8E20D9E2587BA912303 /* CoreGraphics.framework */,
+				EFE57C56C2D8DAD8CA2D943098456442 /* Foundation.framework */,
+				61B9EB4A770A3F4E34E5E3624885E0A8 /* MobileCoreServices.framework */,
+				BD9E7DB83C31EB1BD096CC9BE86AFE91 /* QuartzCore.framework */,
+				93915728E5F62B05E8CA568E2CA60835 /* Security.framework */,
+				EC8B62834E418D8C3C6049C82DB8E70A /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		628BADAFD25BB2F6F735CA4832F6F42A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C222E511E90C17EA50C1520D3CB166AD /* BCBaseReq.h */,
+				BA4456AD19CEFF505577349E1CEF2446 /* BCBaseReq.m */,
+				D4C989FA2D781D0E29A531AB642000D6 /* BCBaseResp.h */,
+				008E5926B06B111312CFEE597B50183A /* BCBaseResp.m */,
+				85D829ECBF82CD4EABC359F8F752173D /* BCBaseResult.h */,
+				359164194979888A466B5F835CC353D8 /* BCBaseResult.m */,
+				477C6C57ABA593B7BE3006BC62FD265E /* BCPayCache.h */,
+				A23A5FC8E70C60B2E94E3AE1C4A97229 /* BCPayCache.m */,
+				B1431CE281BBB5CA0EA02846330BC4AD /* BCPayConstant.h */,
+				F361FAEE2FB4C61AFD6C2369620C3E4B /* BCPayObjects.h */,
+				D4CA7FA11033348AFF58FE0CE2A6FF87 /* BCPayPalReq.h */,
+				857065805E8E556DC2E0E4D8A4AD5965 /* BCPayPalReq.m */,
+				E3559DD6AD01CDC69385A46059140A48 /* BCPayPalVerifyReq.h */,
+				38BCC0EF633C92F548602907110A20A3 /* BCPayPalVerifyReq.m */,
+				56D3046CA65A5DF4389DFEEE11CC3793 /* BCPayReq.h */,
+				3776BC018D55C0116F909210AF08B3BD /* BCPayReq.m */,
+				05359565359F85A13D989E0E870E953C /* BCPayResp.h */,
+				C07E8BB95C27CDC0BB5DDB5018BF1A99 /* BCPayResp.m */,
+				8A0960A6E468E69ABEBEF04DE7D4F3E0 /* BCPayUtil.h */,
+				E8E587226E8E53A72029EFA6C73A8130 /* BCPayUtil.m */,
+				04B7D7FDF32563F7984C2DE31459C06C /* BCQueryBillResult.h */,
+				D00CD7E5D1E01DB1D560C5A415AEB9B0 /* BCQueryBillResult.m */,
+				1A8DC42E65990C5F2D598FD81C5A62E2 /* BCQueryRefundReq.h */,
+				A90542915047ADFCE6609F89B0C10A7E /* BCQueryRefundReq.m */,
+				A9EEF9EBBEAB7F14DCFEA762E51A952B /* BCQueryRefundResult.h */,
+				E20277F86D12BA1E0FE599C229AD2D0C /* BCQueryRefundResult.m */,
+				CAF4A4C975BDFCCC01E29FC1387796C2 /* BCQueryReq.h */,
+				B29D4801087A7A406BEB4758B5A40A4F /* BCQueryReq.m */,
+				F5D665FD042ADD22B5582DA3B0C1EB46 /* BCQueryResp.h */,
+				0AE5166AFA15794F0B8B8B37FB2F5566 /* BCQueryResp.m */,
+				45729CE6DF76748A491F304A8E173238 /* BCRefundStatusReq.h */,
+				179A91FE4331EA6D53B0E1D2BF16A239 /* BCRefundStatusReq.m */,
+				EDEE70ABF3B1182C5D60EFEE353AABB8 /* BCRefundStatusResp.h */,
+				B6C1B04B678447E9E914C21AAD80C698 /* BCRefundStatusResp.m */,
+				BCC051E6DB8700A5B6A6822D8FE38131 /* BeeCloud.h */,
+				9E7917858CC004A01BAEFC036F06341E /* BeeCloud.m */,
+				2846872DD92D69614D8B6AA53CA5AA59 /* BeeCloudAdapter.h */,
+				03C3FBCAA68E19F59282ECC8EA1F153F /* BeeCloudAdapter.m */,
+				6E9736567B3091B6598FF53364E60A41 /* BeeCloudAdapterProtocol.h */,
+				9F2DC18DA4DE33B37BB415AB563EA42D /* NSDictionary+Utils.h */,
+				104997D8C405D77CE09527A820348C3F /* NSDictionary+Utils.m */,
+				0CF3A191F75D75017CAE67A6EC1DF0E4 /* NSString+IsValid.h */,
+				C8C612C3D722BF8C9EB79776417651BA /* NSString+IsValid.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		62964DAE29E8CF0BC6152C0ED3F4FB50 /* Alipay */ = {
+			isa = PBXGroup;
+			children = (
+				82332AA70165901593F18760B9ECE18F /* AlipaySDK.h */,
+				F0C47EA3E6A47BCCDBD5987DCD6180D9 /* APayAuthInfo.h */,
+				3F57F11B371485B7643517D464173F16 /* BCAliPayAdapter.h */,
+				EA8EE80FB0E6C6BADC9460B80EBF0FCC /* BCAliPayAdapter.m */,
+				46D66CCD673E43FA04AD2B41335E6D9D /* Frameworks */,
+			);
+			name = Alipay;
+			sourceTree = "<group>";
+		};
+		6AA3FB9B21E78DE31D6E6D99BFCFC2F0 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				56FB377F813CD6C642557D1B62F8FA0F /* AFHTTPRequestOperation.h */,
+				7A9FFFF59742A781FF93D075C7626B34 /* AFHTTPRequestOperation.m */,
+				958AB5108110F96D3A97FECA151AC392 /* AFHTTPRequestOperationManager.h */,
+				B484460ABB36308AF58BDC3A6F2A85B2 /* AFHTTPRequestOperationManager.m */,
+				92BB7C14D2435931AA0938904CBAE47A /* AFURLConnectionOperation.h */,
+				A47AF006870DD0EB9E67625B4EF4BC46 /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
+				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
+				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				AD37EE3CE22F2D6A660B5BD65007E786 /* Frameworks */,
+				0C3BF0503FEC375FB0AD4F8C9FBA7131 /* Pods */,
+				B315CFDC2CA5B6AE98AC8B1291FD5E89 /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8850D42F992FA29F246178F3F7AD9555 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08436F3C66356A63B01581D1E28F2782 /* libUPPayPlugin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD37EE3CE22F2D6A660B5BD65007E786 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				040C09B94F19533FBD391278CB20185D /* AFNetworking.framework */,
+				5491C968E45D924FB71BBDB8B838F133 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B315CFDC2CA5B6AE98AC8B1291FD5E89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0035B676FE5D5FF6B18217F9DDB52CE /* AFNetworking.framework */,
+				A677CA357017168DA0625B8C6739843C /* BeeCloud.framework */,
+				82E4F07133D9753BF6053C88F7DF3779 /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B66E020BD822AFC31001BC7F61F382C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADADC8986466A121C770BC57F459BD08 /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D9F99AA8C1BE92332B09C30F769B141B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9CDB98260A78D2DEE0D43ED75C58DD6B /* AFNetworkActivityIndicatorManager.h */,
+				BA736D03B81F25E7C42AE3702B5F3D74 /* AFNetworkActivityIndicatorManager.m */,
+				3AA384043130A312C8E166F7866F7196 /* UIActivityIndicatorView+AFNetworking.h */,
+				B1B8E0A9F505EBD08EB8B0DE9D49B629 /* UIActivityIndicatorView+AFNetworking.m */,
+				08145B03478DDD2DFD14401234738187 /* UIAlertView+AFNetworking.h */,
+				1A575A654A37690279EB96265A5E9DC4 /* UIAlertView+AFNetworking.m */,
+				C1AF3977788ECC68AC5FDFE6C54A44F8 /* UIButton+AFNetworking.h */,
+				264C736FB8ED71C74C75710A131D29FF /* UIButton+AFNetworking.m */,
+				DFF5638FBAB763C6AD071844CB20A579 /* UIImage+AFNetworking.h */,
+				A46D0574388B8FBDFAD992CB697B01FC /* UIImageView+AFNetworking.h */,
+				9C53D2FDFBB53045069E475DA804BCF3 /* UIImageView+AFNetworking.m */,
+				A2309B7AB77E828FD0A379B5F3861C46 /* UIKit+AFNetworking.h */,
+				AE5C3FC6AA5E40C0B2E5128A48AD57A5 /* UIProgressView+AFNetworking.h */,
+				29B0ADD225EF38A67AEABF9AB384293E /* UIProgressView+AFNetworking.m */,
+				1A3B7E0279BE890C3DD0F4D61486851E /* UIRefreshControl+AFNetworking.h */,
+				C0CB064014A640E6D4C6B7230F7C6260 /* UIRefreshControl+AFNetworking.m */,
+				BEC4E1248E7DDDC38922B2551B0E95A3 /* UIWebView+AFNetworking.h */,
+				8083AD2525C016DFD9DCFF1BC08EA7F4 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		E193CB99A13E496F4513EA149D4048B6 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F462955298F288517DDAC84D5D8B9B13 /* AFNetworking.h */,
+				6AA3FB9B21E78DE31D6E6D99BFCFC2F0 /* NSURLConnection */,
+				48BBB5BD91FEC906EA7D5DDBBD202084 /* NSURLSession */,
+				5483655F255B7FF51B8F6FC6D13F1A98 /* Reachability */,
+				18A10863D9139568D2B86FBAB40C5E71 /* Security */,
+				34BFD18C50E05D2D9174FE6545AA6FDE /* Serialization */,
+				5323EAA989AC5BFAB8B9DF1B7786B357 /* Support Files */,
+				D9F99AA8C1BE92332B09C30F769B141B /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		EB1971E02E3D7DDA781CFDE88E404DEF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F432C153A3F2607FD6C275DDFAEEA14E /* BeeCloud.modulemap */,
+				0E3BAAE27CCD3EB9720CAC60440B6A95 /* BeeCloud.xcconfig */,
+				0A153155590E9A1C3D66981AEF16BE37 /* BeeCloud-dummy.m */,
+				4E603B1FD158C47C1C711AEBC33B9094 /* BeeCloud-prefix.pch */,
+				E0899C4C593E45AEFEC69F9CAD5C3A23 /* BeeCloud-umbrella.h */,
+				4DA621B4F4ACD646A1F6E22E3575EBB2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BeeCloud";
+			sourceTree = "<group>";
+		};
+		EC37D0696ACE6C81A1224C641CB433E6 /* BeeCloud */ = {
+			isa = PBXGroup;
+			children = (
+				62964DAE29E8CF0BC6152C0ED3F4FB50 /* Alipay */,
+				628BADAFD25BB2F6F735CA4832F6F42A /* Core */,
+				EB1971E02E3D7DDA781CFDE88E404DEF /* Support Files */,
+				16972B5EE4237759609E58DF6C877AE7 /* UnionPay */,
+				4DD2382CFE974173571DF1A6FDDC0CFB /* Wx */,
+			);
+			path = BeeCloud;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		768F269515CD88743504C346410F447B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DCEA7A6BD3A09085EA0FFA46660476 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E065431D77BC58A67E022FE440F1FEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6507275502D7CE823A692FC6414AA3EC /* AlipaySDK.h in Headers */,
+				17141B2540597E1DC6398C3EA7A275D2 /* APayAuthInfo.h in Headers */,
+				EF8831E051DB75235CC761A963859008 /* BCAliPayAdapter.h in Headers */,
+				425BF0587AAD6FECE1003741206D3934 /* BCBaseReq.h in Headers */,
+				AE256BCFD1E86977D2D5ADE952CFE9A5 /* BCBaseResp.h in Headers */,
+				464D289BF0E35718D668FE869BA824F9 /* BCBaseResult.h in Headers */,
+				2F6477CCF6001A9C2F86B7F73EF47EF9 /* BCPayCache.h in Headers */,
+				2E642303C80D776CB7A90752852DFDAD /* BCPayConstant.h in Headers */,
+				D94B3232F8E6FE30D198E2CA66BD2E62 /* BCPayObjects.h in Headers */,
+				43E368E6ADA620DC6FC171E59708036A /* BCPayPalReq.h in Headers */,
+				9C083DDF43AFC5E141DDEA3E5EB9D7A1 /* BCPayPalVerifyReq.h in Headers */,
+				28F9833C7823849832C33AA3541DFABB /* BCPayReq.h in Headers */,
+				410241BC8AFA28564F36E5F81384FF88 /* BCPayResp.h in Headers */,
+				8B376EFFB43B9262E2DCE7B12414F0BC /* BCPayUtil.h in Headers */,
+				224E4F478CFE353BD010A582ADCB13FD /* BCQueryBillResult.h in Headers */,
+				574B78A583B9B00B973B127AA6072B03 /* BCQueryRefundReq.h in Headers */,
+				F7790343980CB5E0C1CBA926C6711FFA /* BCQueryRefundResult.h in Headers */,
+				24A14FC9BCB0123819FCD7347A5894A6 /* BCQueryReq.h in Headers */,
+				5DFB5DBB9425596C825FE23795A34FCA /* BCQueryResp.h in Headers */,
+				568533AE74F54F587173CEBAC7FAB856 /* BCRefundStatusReq.h in Headers */,
+				4FF9D26E25144C2E2E057AA156542AFA /* BCRefundStatusResp.h in Headers */,
+				9AB021B020F0FF36FDCCBDD954F31F11 /* BCUnionPayAdapter.h in Headers */,
+				F2947623DD52D644383C8F0FD2A4856E /* BCWXPayAdapter.h in Headers */,
+				3BB95B3AEE5AF8990BCA530649EF3C39 /* BeeCloud-umbrella.h in Headers */,
+				79CD07A0B11EB766341D74B2AAA283E5 /* BeeCloud.h in Headers */,
+				CA29B7843B92E4C897CC9DC085A764E2 /* BeeCloudAdapter.h in Headers */,
+				085DE31C0E4845F80469938FCE7159D1 /* BeeCloudAdapterProtocol.h in Headers */,
+				D343C6C3F34143E49A2E7E582D1C2ADC /* NSDictionary+Utils.h in Headers */,
+				293053E8CA44089B164F6510AA24FF44 /* NSString+IsValid.h in Headers */,
+				0DBD2C8015A5C77B9759E1BF1F2B07D5 /* UPPayPlugin.h in Headers */,
+				746B09C88DAFAE70B82DE4C4DF47AD70 /* UPPayPluginDelegate.h in Headers */,
+				9760A35EA7E60AE5A0648B1F5B306F55 /* WXApi.h in Headers */,
+				856250C3A60A87C9656DFA0A2E6A104F /* WXApiObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C80F38D01CF08B0F39839F63560CCB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290353FFD70C6FED0E88244849792541 /* AFHTTPRequestOperation.h in Headers */,
+				4126FC06B09C1514C4623BEF344EEDF2 /* AFHTTPRequestOperationManager.h in Headers */,
+				43BC8D2611C04A47C0BE9FFB228E07A5 /* AFHTTPSessionManager.h in Headers */,
+				F2E9945B7494E20ED7DC4720A2B8CDC9 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				34BEE08ED8F8B9B3B939D4D732CFBEFE /* AFNetworking-umbrella.h in Headers */,
+				96247D22CC837A06A450BB49F1D2F79E /* AFNetworking.h in Headers */,
+				4F093F6FBA6E6B060CF66145CF214E14 /* AFNetworkReachabilityManager.h in Headers */,
+				68F25493DF29423FEA798D2247A6C918 /* AFSecurityPolicy.h in Headers */,
+				6FDE95FB21B7F5E1EC7A9F49489DAC62 /* AFURLConnectionOperation.h in Headers */,
+				D7C1594DC6A0E38E33E8971C288A9F82 /* AFURLRequestSerialization.h in Headers */,
+				76C1FA68EFCD242119622AE2CEB4D24F /* AFURLResponseSerialization.h in Headers */,
+				DFC29AA19504EF95C8902348017273A8 /* AFURLSessionManager.h in Headers */,
+				56C8D4F00869E61F210A24E0EE8F3A13 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				CEDFE191DF66B8884828359B3494F8E9 /* UIAlertView+AFNetworking.h in Headers */,
+				401C2DDD1436B4AD6B3A43D775389EA4 /* UIButton+AFNetworking.h in Headers */,
+				76C72D9FA8C86EBBC7E3E4AF7F0B4BB5 /* UIImage+AFNetworking.h in Headers */,
+				9E795055729E8F398250A5687BB00AE2 /* UIImageView+AFNetworking.h in Headers */,
+				C70AC3CB2D21E9466D55F37D6167DBA5 /* UIKit+AFNetworking.h in Headers */,
+				7999F436677B92F6DDA1C3D45B67762F /* UIProgressView+AFNetworking.h in Headers */,
+				B42A49260E02658534FF92164B6FC311 /* UIRefreshControl+AFNetworking.h in Headers */,
+				32BE0FB08D9ECD2974197D862E320E36 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4878C70B21CA37D7CB8A476BF986741B /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCFA04D9F87841983F47B020C3F295D0 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				D368A0D8E440ED2393A424F47A6C5549 /* Sources */,
+				60C3D26E2C8843CA90222B621C57A0DA /* Frameworks */,
+				9C80F38D01CF08B0F39839F63560CCB2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = C0035B676FE5D5FF6B18217F9DDB52CE /* AFNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97AC7208836352F73D25E00FD45FC0DA /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A779B0D28BED313B6FA8EF266E719170 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				48B179D3773133BD2B81CD1484C8265D /* Sources */,
+				5968C9654432843B8CE7143487701D1F /* Frameworks */,
+				768F269515CD88743504C346410F447B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62D892BFD66D37A5EF72569CDCC29C1F /* PBXTargetDependency */,
+				ADEBD2FF1080868850FB940D711B1BF2 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 82E4F07133D9753BF6053C88F7DF3779 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B76CBFD05076C4B4D404123D165194AC /* BeeCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90EBE1D266513ADDBBEB75FF51F43DB9 /* Build configuration list for PBXNativeTarget "BeeCloud" */;
+			buildPhases = (
+				1064B7720AE04EA0F4B7643E011EF942 /* Sources */,
+				7B8A67C8E097C6AFE99E76B97F54E157 /* Frameworks */,
+				7E065431D77BC58A67E022FE440F1FEA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18931E8D9EA91E5A38F1A04AA9517AAD /* PBXTargetDependency */,
+			);
+			name = BeeCloud;
+			productName = BeeCloud;
+			productReference = A677CA357017168DA0625B8C6739843C /* BeeCloud.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B315CFDC2CA5B6AE98AC8B1291FD5E89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4878C70B21CA37D7CB8A476BF986741B /* AFNetworking */,
+				B76CBFD05076C4B4D404123D165194AC /* BeeCloud */,
+				97AC7208836352F73D25E00FD45FC0DA /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1064B7720AE04EA0F4B7643E011EF942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC4F73DB58A94143AFD70BE5F8BB37B /* BCAliPayAdapter.m in Sources */,
+				139DA5F2AAAB4BE8A45FEBE13E90A668 /* BCBaseReq.m in Sources */,
+				A00EF7ACB0BD16655B32ADF4AEDCEDC4 /* BCBaseResp.m in Sources */,
+				FE139020614C39C2DE34AA9AE9B87C1A /* BCBaseResult.m in Sources */,
+				B6CFD22D570FD7871694702CC65C4859 /* BCPayCache.m in Sources */,
+				0EAB73EEFCC400FF585E747C0336F289 /* BCPayPalReq.m in Sources */,
+				5E6E6E5EA2B253B4BDB1078C9F174A81 /* BCPayPalVerifyReq.m in Sources */,
+				C02EB2D8BC024DC2A9A9E3B37D1A6B0B /* BCPayReq.m in Sources */,
+				B7AA002E6E01B34E20ACDE421AB110FC /* BCPayResp.m in Sources */,
+				7A7B223B5CF2574CA3C505619D7D495F /* BCPayUtil.m in Sources */,
+				E71A1BD64D6186353DBFF02B63A60E03 /* BCQueryBillResult.m in Sources */,
+				6899C7BC89BF5CF0D24779B88B6ABED2 /* BCQueryRefundReq.m in Sources */,
+				0A0BC64C0D861CF559420EDD11D70174 /* BCQueryRefundResult.m in Sources */,
+				AFF7C2B840919D93545876690B394661 /* BCQueryReq.m in Sources */,
+				0D353E0AFA29C27EC3F5926DF58A3D29 /* BCQueryResp.m in Sources */,
+				70C7A4B0AC0A140FA7CAB853622BC57E /* BCRefundStatusReq.m in Sources */,
+				D500312D44F1ED8CBBA8F92E0C1B2E2F /* BCRefundStatusResp.m in Sources */,
+				03AD37457F07330AD4FFFBE2B5472324 /* BCUnionPayAdapter.m in Sources */,
+				0CA20B2E984C27B0AE62C56B38C2F78D /* BCWXPayAdapter.m in Sources */,
+				158609873E65AD9B695C0B2733752843 /* BeeCloud-dummy.m in Sources */,
+				758BCFF2FDABA1D9861B3DDC0537C2AE /* BeeCloud.m in Sources */,
+				25D2434B0F2767908A46C184C3BA60E3 /* BeeCloudAdapter.m in Sources */,
+				7DF045FC13832C740EE2B5F422CADF13 /* NSDictionary+Utils.m in Sources */,
+				05FD554883FB1F1138605905BC8C474A /* NSString+IsValid.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48B179D3773133BD2B81CD1484C8265D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62841EEC7B9C6B13D52420CF767DC61 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D368A0D8E440ED2393A424F47A6C5549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4112FFA156222BF7053EF22A8827B9 /* AFHTTPRequestOperation.m in Sources */,
+				C7B655603FB1089A5E2D28FCE12DF12F /* AFHTTPRequestOperationManager.m in Sources */,
+				D86913E8F8A1CA01D792A1DFD3AE671C /* AFHTTPSessionManager.m in Sources */,
+				1EA06503C7AF1CA5E13950E3E7D7830E /* AFNetworkActivityIndicatorManager.m in Sources */,
+				C51B96A7E543F72CD7925968E35DC041 /* AFNetworking-dummy.m in Sources */,
+				C087B9B3A493BC8232CBA4DB1CB47A67 /* AFNetworkReachabilityManager.m in Sources */,
+				4E32C6B26518F18DC4AB3E225B86EE88 /* AFSecurityPolicy.m in Sources */,
+				C6CDABE1AEBB5DC4A35A6B221BB98D13 /* AFURLConnectionOperation.m in Sources */,
+				1389748BE24F9D2223187CB20D9A020C /* AFURLRequestSerialization.m in Sources */,
+				DB840EF5FD9645993A399CDE849E784C /* AFURLResponseSerialization.m in Sources */,
+				945C9834347A969CDD4FB9A5AB9FF0E0 /* AFURLSessionManager.m in Sources */,
+				4E94B8F460BF431A50D94814F7C8AF61 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				E7FA21C38D6A1CB113BE2DA22E73B845 /* UIAlertView+AFNetworking.m in Sources */,
+				BB82DC2891A35AC22DD6D5CE4CAE4364 /* UIButton+AFNetworking.m in Sources */,
+				081A50535FCDF50D0118223459790167 /* UIImageView+AFNetworking.m in Sources */,
+				CF051D17275C20E0FBF5736E3C8A0573 /* UIProgressView+AFNetworking.m in Sources */,
+				1A15E1DAB1BF63371AE5ADFAED9169E5 /* UIRefreshControl+AFNetworking.m in Sources */,
+				79D287D48B2A81896F365CA21F0B27D6 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18931E8D9EA91E5A38F1A04AA9517AAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 4878C70B21CA37D7CB8A476BF986741B /* AFNetworking */;
+			targetProxy = DAB1914EC76A73A674CB81A3FBE1BD76 /* PBXContainerItemProxy */;
+		};
+		62D892BFD66D37A5EF72569CDCC29C1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 4878C70B21CA37D7CB8A476BF986741B /* AFNetworking */;
+			targetProxy = B4A0397F5EC26D6385A0228215F9EBC7 /* PBXContainerItemProxy */;
+		};
+		ADEBD2FF1080868850FB940D711B1BF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BeeCloud;
+			target = B76CBFD05076C4B4D404123D165194AC /* BeeCloud */;
+			targetProxy = 9AAAB34C31F0885CBD344F2AA51A1424 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10BD746BE62427217E5F96397B41F8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF736DF979EE9DB7E60DFA4AAC44E91 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		477DDD16ACBB22C8898904C30F50AABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E3BAAE27CCD3EB9720CAC60440B6A95 /* BeeCloud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BeeCloud/BeeCloud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BeeCloud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BeeCloud/BeeCloud.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BeeCloud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F517AD39DF63EA0E1BA0B02BDEBDFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E3BAAE27CCD3EB9720CAC60440B6A95 /* BeeCloud.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BeeCloud/BeeCloud-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BeeCloud/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BeeCloud/BeeCloud.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BeeCloud;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76932F6B2771555590321DEBC1DAFC4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4F19897E44361FB64F718DC1874A76E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CAE681D4AA94073991D0FAA0501809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF736DF979EE9DB7E60DFA4AAC44E91 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90EBE1D266513ADDBBEB75FF51F43DB9 /* Build configuration list for PBXNativeTarget "BeeCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477DDD16ACBB22C8898904C30F50AABC /* Debug */,
+				6F517AD39DF63EA0E1BA0B02BDEBDFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A779B0D28BED313B6FA8EF266E719170 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F19897E44361FB64F718DC1874A76E /* Debug */,
+				76932F6B2771555590321DEBC1DAFC4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCFA04D9F87841983F47B020C3F295D0 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10BD746BE62427217E5F96397B41F8B6 /* Debug */,
+				A5CAE681D4AA94073991D0FAA0501809 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

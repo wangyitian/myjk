@@ -1,0 +1,45 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BeeCloud (3.3.2):
+    - BeeCloud/Alipay (= 3.3.2)
+    - BeeCloud/Core (= 3.3.2)
+    - BeeCloud/UnionPay (= 3.3.2)
+    - BeeCloud/Wx (= 3.3.2)
+  - BeeCloud/Alipay (3.3.2):
+    - BeeCloud/Core
+  - BeeCloud/Core (3.3.2):
+    - AFNetworking
+  - BeeCloud/UnionPay (3.3.2):
+    - BeeCloud/Core
+  - BeeCloud/Wx (3.3.2):
+    - BeeCloud/Core
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.3)
+  - BeeCloud
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  BeeCloud: c4eaf75e825040cc4b2c34546c974049f43f5426
+
+COCOAPODS: 0.39.0

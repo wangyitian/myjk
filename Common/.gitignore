@@ -1,0 +1,6 @@
+xcuserdata
+*.xcworkspace
+!default.xcworkspace
+DerivedData
+.DS_Store
+Reveal.framework
