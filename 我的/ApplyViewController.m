@@ -62,16 +62,14 @@
     self.buttonArray = [NSMutableArray array];
     NSArray *titleArray = @[@"远程会诊",@"赴美就医",@"高端体检",@"精准医疗"];
     NSArray *imageArray = @[@"远程会诊",@"赴美医疗",@"精密体检",@"基因检测"];
+    NSArray *imageSelectedArray = @[@"远程会诊_s",@"赴美就医_s",@"高端体检_s",@"精准医疗_s"];
     for (int i = 0; i < 4; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setImage:[UIImage imageNamed:imageArray[i]] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:imageSelectedArray[i]] forState:UIControlStateSelected];
         CGFloat btnX = ScreenWidth/4*i + (ScreenWidth/4-60)/2;
         btn.frame = CGRectMake(btnX, 16, 60, 60);
         btn.tag = 1000 + i;
-        btn.layer.masksToBounds = YES;
-        btn.layer.borderWidth = 0;
-        btn.layer.cornerRadius = 30;
-        btn.layer.borderColor = [UIColor blueColor].CGColor;
         [btn addTarget:self action:@selector(type:) forControlEvents:UIControlEventTouchUpInside];
         [self.scrollView addSubview:btn];
         [self.buttonArray addObject:btn];
@@ -149,15 +147,12 @@
 - (void)type:(UIButton*)btn {
     if (btn.selected) {
         btn.selected = NO;
-        btn.layer.borderWidth = 0;
         self.type = @"";
     } else {
         for (UIButton *button in self.buttonArray) {
             button.selected = NO;
-            button.layer.borderWidth = 0;
         }
         btn.selected = YES;
-        btn.layer.borderWidth = 1;
         self.type = [NSString stringWithFormat:@"%ld",btn.tag-1000];
     }
 }

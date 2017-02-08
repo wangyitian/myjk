@@ -56,7 +56,7 @@ class ShouYePageController: UIViewController,UITableViewDataSource,UITableViewDe
         super.viewWillAppear(animated)
         parentViewController?.navigationItem.titleView = nil
         let img = UIImageView(frame: CGRectMake(0, 0, 60, 17))
-        img.image = UIImage(named: "LOGO")
+        img.image = UIImage(named: "logo_new")
         parentViewController?.navigationItem.titleView = img
         parentViewController?.navigationItem.leftBarButtonItem = nil
         
