@@ -12,7 +12,8 @@
 #import "MBProgressHUD.h"
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
-@interface ApplyViewController ()<UIScrollViewDelegate>
+#define ApplyURL    @"http://www.meiyujiankang.com/api/service.php"
+@interface ApplyViewController ()<UIScrollViewDelegate,UIAlertViewDelegate>
 @property (nonatomic, strong) TPKeyboardAvoidingScrollView* scrollView;
 @property (nonatomic, strong) NSMutableArray *buttonArray;
 @property (nonatomic, strong) UITextField *nameTextField;
@@ -61,8 +62,8 @@
 - (void)initButtonArray {
     self.buttonArray = [NSMutableArray array];
     NSArray *titleArray = @[@"远程会诊",@"赴美就医",@"高端体检",@"精准医疗"];
-    NSArray *imageArray = @[@"远程会诊",@"赴美医疗",@"精密体检",@"基因检测"];
-    NSArray *imageSelectedArray = @[@"远程会诊_s",@"赴美就医_s",@"高端体检_s",@"精准医疗_s"];
+    NSArray *imageSelectedArray = @[@"远程会诊",@"赴美医疗",@"精密体检",@"基因检测"];
+    NSArray *imageArray = @[@"远程会诊_s",@"赴美就医_s",@"高端体检_s",@"精准医疗_s"];
     for (int i = 0; i < 4; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setImage:[UIImage imageNamed:imageArray[i]] forState:UIControlStateNormal];
@@ -153,7 +154,7 @@
             button.selected = NO;
         }
         btn.selected = YES;
-        self.type = [NSString stringWithFormat:@"%ld",btn.tag-1000];
+        self.type = [NSString stringWithFormat:@"%ld",btn.tag-1000+1];
     }
 }
 
@@ -169,22 +170,49 @@
         AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
         session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"application/x-json",@"text/html", nil];
         NSMutableDictionary *paramter = [NSMutableDictionary dictionary];
-        [paramter setObject:self.nameTextField.text forKey:@"username"];
+        [paramter setObject:self.nameTextField.text forKey:@"realname"];
         [paramter setObject:self.sexTextField.text forKey:@"gender"];
-        [paramter setObject:self.phoneTextField.text forKey:@"number"];
+        [paramter setObject:self.phoneTextField.text forKey:@"mymobile"];
         [paramter setObject:self.birthdayTextField.text forKey:@"birthday"];
-        [paramter setObject:self.emailTextField.text forKey:@"email"];
+        [paramter setObject:self.emailTextField.text forKey:@"myemail"];
         [paramter setObject:self.cityTextField.text forKey:@"lead_address"];
-        [paramter setObject:self.type forKey:@"type"];
-        [session GET:@"" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        [paramter setObject:[NSString stringWithFormat:@"id%@",self.type] forKey:@"type"];
+        [session GET:ApplyURL parameters:paramter success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
+            NSDictionary *res = (NSDictionary*)responseObject;
+            if ([res[@"status"] isEqualToString:@"0"]) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:res[@"message"] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+                [alert show];
+            } else if ([res[@"status"] isEqualToString:@"1"]) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:res[@"message"] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+                alert.delegate = self;
+                alert.tag = 2000;
+                [alert show];
+            }
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             [MBProgressHUD hideHUDForView:self.view animated:YES];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"网络请求失败，请稍后再试" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+            [alert show];
         }];
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请填写完整" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
         [alert show];
         return;
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == 2000) {
+        self.nameTextField.text = @"";
+        self.sexTextField.text = @"";
+        self.phoneTextField.text = @"";
+        self.birthdayTextField.text = @"";
+        self.emailTextField.text = @"";
+        self.cityTextField.text = @"";
+        for (UIButton *btn in self.buttonArray) {
+            btn.selected = NO;
+            self.type = @"";
+        }
     }
 }
 
