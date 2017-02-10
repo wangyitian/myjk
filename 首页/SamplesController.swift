@@ -78,30 +78,31 @@ class SamplesController: UIViewController ,UITableViewDataSource,UITableViewDele
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
-        guard let head = header as? sampleHeaderCell else {
-            return 108
-        }
-        let height = head.collectionView.collectionViewLayout.collectionViewContentSize().height
-        if height > 0{
-            return height + 23
-        }
-        return 108
+//        guard let head = header as? sampleHeaderCell else {
+//            return 108
+//        }
+//        let height = head.collectionView.collectionViewLayout.collectionViewContentSize().height
+//        if height > 0{
+//            return height + 23
+//        }
+//        return 108
+        return 23
     }
     
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?{
-        guard dataSicks.keys.count > 0 else {
-            return nil
-        }
-        if let _ = header{
-            return header?.contentView
-        }else{
-            let cell = tableView.dequeueReusableCellWithIdentifier("sampleHeader") as! sampleHeaderCell
-            cell.dataSicks = dataSicks
-            cell.collectionView.reloadData()
-            header = cell
-            return cell.contentView
-        }
-    }
+//    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?{
+//        guard dataSicks.keys.count > 0 else {
+//            return nil
+//        }
+//        if let _ = header{
+//            return header?.contentView
+//        }else{
+//            let cell = tableView.dequeueReusableCellWithIdentifier("sampleHeader") as! sampleHeaderCell
+//            cell.dataSicks = dataSicks
+//            cell.collectionView.reloadData()
+//            header = cell
+//            return cell.contentView
+//        }
+//    }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let ctl = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("DetailController") as! DetailController

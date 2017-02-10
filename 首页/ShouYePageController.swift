@@ -221,17 +221,17 @@ class ShouYePageController: UIViewController,UITableViewDataSource,UITableViewDe
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
         if section == 1{
             guard headers.count > 0 ,let head = headers[0] as? sampleHeaderCell else {
-                return 160
+                return 39
             }
-            let height = head.collectionView.collectionViewLayout.collectionViewContentSize().height
-            if height > 0{
-                let heightForHeader = height + 58
-                var frame = head.frame
-                frame.size.height = heightForHeader
-                head.frame = frame
-                return heightForHeader
-            }
-            return 160
+//            let height = head.collectionView.collectionViewLayout.collectionViewContentSize().height
+//            if height > 0{
+//                let heightForHeader = height + 58
+//                var frame = head.frame
+//                frame.size.height = heightForHeader
+//                head.frame = frame
+//                return heightForHeader
+//            }
+            return 39
         }else if section == 2{
             return 39
         }else if section == 3{
@@ -257,8 +257,8 @@ class ShouYePageController: UIViewController,UITableViewDataSource,UITableViewDe
                 return headers[section - 1].contentView
             }else{
                 let cell = tableView.dequeueReusableCellWithIdentifier("sampleHeader") as! sampleHeaderCell
-                    cell.dataSicks = maladys
-                    cell.collectionView.reloadData()
+//                    cell.dataSicks = maladys
+//                    cell.collectionView.reloadData()
                 headers.append(cell)
                 return cell.contentView
             }
