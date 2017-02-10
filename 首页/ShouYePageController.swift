@@ -326,7 +326,6 @@ class ShouYePageController: UIViewController,UITableViewDataSource,UITableViewDe
         
     }
 
-
     func fetchData(){
         YBToastView.showLoadingToast(inView: self.view, blockSuperView: true)
         SharedNetWorkManager.GET(kShouYeUrlString, parameters: nil, success: { (task, result) -> Void in
