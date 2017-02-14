@@ -45,7 +45,7 @@ class YBPhoneCodeButton: UIButton {
     }
     private func createTimer() {
         disableTimer()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timerFire", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(YBPhoneCodeButton.timerFire), userInfo: nil, repeats: true)
         lastTime = NSDate().timeIntervalSince1970
     }
     

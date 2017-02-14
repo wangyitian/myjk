@@ -25,7 +25,7 @@ class ConfirmMailController: UIViewController {
                 YBToastView.showToast(inView: self.view, withText: "保存失败")
                 return
             }
-            UIImageWriteToSavedPhotosAlbum(image, self, "imageSaveFinish:error:contextInfo:", nil)
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(ConfirmMailController.imageSaveFinish(_:error:contextInfo:)), nil)
             }) { (task, error) -> Void in
                 YBToastView.showToast(inView: self.view, withText: "保存失败")
                 print(error)
@@ -43,7 +43,7 @@ class ConfirmMailController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "预约确认函"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(ConfirmMailController.back))
     }
 
     override func viewDidLoad() {

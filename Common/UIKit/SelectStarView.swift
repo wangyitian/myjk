@@ -34,7 +34,7 @@ class SelectStarView: StarView {
     required init?(coder aDecoder: NSCoder) {
         gesture = UITapGestureRecognizer()
         super.init(coder: aDecoder)
-        gesture.addTarget(self, action: "didTap:")
+        gesture.addTarget(self, action: #selector(SelectStarView.didTap(_:)))
         self.addGestureRecognizer(gesture)
         starCount = 5
 
@@ -42,7 +42,7 @@ class SelectStarView: StarView {
     override init(frame: CGRect) {
         gesture = UITapGestureRecognizer()
         super.init(frame: frame)
-        gesture.addTarget(self, action: "didTap:")
+        gesture.addTarget(self, action: #selector(SelectStarView.didTap(_:)))
         self.addGestureRecognizer(gesture)
         starCount = 5
     }

@@ -87,7 +87,7 @@ class YuanchengPayController: UIViewController ,BeeCloudDelegate{
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "支 付"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(YuanchengPayController.back))
     }
     
     override func viewDidAppear(animated: Bool) {

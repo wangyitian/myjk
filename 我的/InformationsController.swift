@@ -16,7 +16,7 @@ class InformationsController: UIViewController ,UITableViewDataSource,UITableVie
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "消息中心"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(InformationsController.back))
     }
 
     override func viewDidLoad() {

@@ -99,7 +99,7 @@ class FastLoginController: UIViewController ,KeyboardScrollable{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(FastLoginController.back))
         // Do any additional setup after loading the view.
     }
 

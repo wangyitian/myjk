@@ -36,7 +36,7 @@ class NewsController: UIViewController ,UITableViewDataSource,UITableViewDelegat
         if refreshView == nil {
             refreshView =  RefreshView(frame: CGRectMake(tableView.frame.width/2-25,-50,50,50))
             refreshView!.addtoScrollView(self.tableView)
-            refreshView!.addTarget(self, action: "refreshAction")
+            refreshView!.addTarget(self, action: #selector(NewsController.refreshAction))
            
         }
     }
@@ -45,13 +45,13 @@ class NewsController: UIViewController ,UITableViewDataSource,UITableViewDelegat
         super.viewWillAppear(animated)
         parentViewController?.navigationItem.titleView = nil
         parentViewController?.navigationItem.title = "新 闻"
-        parentViewController?.navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        parentViewController?.navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(NewsController.back))
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "refreshNews:", name: "refreshNews", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(NewsController.refreshNews(_:)), name: "refreshNews", object: nil)
         // Do any additional setup after loading the view.
     }
     
@@ -179,7 +179,7 @@ class NewsController: UIViewController ,UITableViewDataSource,UITableViewDelegat
                 if let refresh = self.refreshView{
                     refresh.endReFresh()
                 }
-                self.currentPage++
+                self.currentPage+=1
             }
             if objs.count < 10{
                 self.finish = true

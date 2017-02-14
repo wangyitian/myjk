@@ -67,7 +67,7 @@ class ChooseOrderController: UIViewController ,UITableViewDataSource,UITableView
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "选择套餐"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(ChooseOrderController.back))
     }
     
     override func viewDidLoad() {
@@ -100,14 +100,14 @@ class ChooseOrderController: UIViewController ,UITableViewDataSource,UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         if indexPath.section == 0{
             let cell = tableView.dequeueReusableCellWithIdentifier("productCell", forIndexPath: indexPath) as! productCell
-                cell.name.text = dataProducts[indexPath.row]["name"] as! String
+                cell.name.text = dataProducts[indexPath.row]["name"] as? String
             let str = dataProducts[indexPath.row]["price"] as! String
             if str != "0" {
                 cell.price.text = "价格￥" + str
             } else {
                 cell.price.text = "价格：待商谈"
             }
-            cell.detail.text = dataProducts[indexPath.row]["description"] as! String
+            cell.detail.text = dataProducts[indexPath.row]["description"] as? String
             if indexPath.row == selectedRow{
                 cell.checkBtn.selected = true
             }else{

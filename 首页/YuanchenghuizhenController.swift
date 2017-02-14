@@ -30,7 +30,7 @@ class YuanchenghuizhenController: UIViewController ,UITableViewDataSource,UITabl
         
         let skipView = UIView(frame: CGRectMake(0, 0, 40, 40))
         let skipBtn = LargerButton()
-        skipBtn.addTarget(self, action: "skipToPay", forControlEvents: .TouchUpInside)
+        skipBtn.addTarget(self, action: #selector(YuanchenghuizhenController.skipToPay), forControlEvents: .TouchUpInside)
         skipBtn.frame = CGRectMake(0, 5, 28, 30)
         skipBtn.expandEdge = UIEdgeInsetsMake(20, 50, 20, 50)
         skipBtn.setTitle("跳过", forState: UIControlState.Normal)
@@ -55,11 +55,11 @@ class YuanchenghuizhenController: UIViewController ,UITableViewDataSource,UITabl
         if let tit = currentTitle{
             navigationItem.title = tit
         }
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(YuanchenghuizhenController.back))
         let rBtn = UIButton(frame: CGRectMake(0,0,60,20))
         rBtn.setTitle("立即申请", forState: UIControlState.Normal)
         rBtn.titleLabel?.font = UIFont.systemFontOfSize(13)
-        rBtn.addTarget(self, action: "apply", forControlEvents: UIControlEvents.TouchUpInside)
+        rBtn.addTarget(self, action: #selector(YuanchenghuizhenController.apply), forControlEvents: UIControlEvents.TouchUpInside)
         let rBar = UIBarButtonItem(customView: rBtn)
         navigationItem.rightBarButtonItem = rBar
     }

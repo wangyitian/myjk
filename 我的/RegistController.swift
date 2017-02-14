@@ -117,7 +117,7 @@ class RegistController: UIViewController , KeyboardScrollable{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(RegistController.back))
         checkBtn.selected = true
     }
     override func viewDidAppear(animated: Bool) {

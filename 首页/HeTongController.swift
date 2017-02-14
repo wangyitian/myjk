@@ -19,7 +19,7 @@ class HeTongController: UIViewController {
         if let name = titleName{
             navigationItem.title = name
         }
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(HeTongController.back))
         guard let type = typeNum else {
             return
         }

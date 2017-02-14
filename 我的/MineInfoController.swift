@@ -20,7 +20,7 @@ class MineInfoController: UIViewController ,UITableViewDataSource,UITableViewDel
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "个人信息"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(MineInfoController.back))
         YBToastView.showLoadingToast(inView: view, blockSuperView: true)
         fetchData()
     }
@@ -127,7 +127,7 @@ class MineInfoController: UIViewController ,UITableViewDataSource,UITableViewDel
                                         }
                                     }
                                 }else{
-                                    self.data["病症"] = sick["name"] as! String
+                                    self.data["病症"] = sick["name"] as? String
                                     SharedUserInfo.sickName = sick["name"] as! String
                                     
                                 }
@@ -167,7 +167,7 @@ class MineInfoController: UIViewController ,UITableViewDataSource,UITableViewDel
                                             }
                                         }
                                     }else{
-                                        self.data["住址"] = city["name"] as! String
+                                        self.data["住址"] = city["name"] as? String
                                         SharedUserInfo.city = city["name"] as! String
                                         
                                     }

@@ -143,7 +143,7 @@ class UserInfo: NSObject {
     private override init() {
         super.init()
         loadFromLocal()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "willResignActive", name: UIApplicationWillResignActiveNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(UserInfo.willResignActive), name: UIApplicationWillResignActiveNotification, object: nil)
     }
     
     func clearUserInfo(){

@@ -23,7 +23,7 @@ class MineShouYeController: UIViewController ,UITableViewDataSource,UITableViewD
         super.viewWillAppear(animated)
         parentViewController?.navigationItem.titleView = nil
         parentViewController?.navigationItem.title = SharedUserInfo.name
-        parentViewController?.navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        parentViewController?.navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(MineShouYeController.back))
         data[0][0] = SharedUserInfo.realname
         tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
       
@@ -31,7 +31,7 @@ class MineShouYeController: UIViewController ,UITableViewDataSource,UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reNewInfo", name: "quit", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MineShouYeController.reNewInfo), name: "quit", object: nil)
         // Do any additional setup after loading the view.
     }
 
@@ -43,7 +43,7 @@ class MineShouYeController: UIViewController ,UITableViewDataSource,UITableViewD
     func reNewInfo(){
         parentViewController?.navigationItem.titleView = nil
         parentViewController?.navigationItem.title = SharedUserInfo.name
-        parentViewController?.navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        parentViewController?.navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(MineShouYeController.back))
         data[0][0] = SharedUserInfo.realname
         tableView.reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
     }

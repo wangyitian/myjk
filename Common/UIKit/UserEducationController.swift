@@ -55,7 +55,7 @@ class UserEducationController: UIViewController {
         }
         NSLayoutConstraint.pinTrailing(lastImageView, secondView: scrollView)
         //Tap
-        let tapGR = UITapGestureRecognizer(target: self, action: "didTap")
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(UserEducationController.didTap))
         tapGR.delegate = self
         view.addGestureRecognizer(tapGR)
     }

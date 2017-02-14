@@ -46,7 +46,7 @@ class RePayController: UIViewController  ,BeeCloudDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "支 付"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(RePayController.back))
         payChooseBtn.selected = true
         if let name = pro_name{
             productName.text = name

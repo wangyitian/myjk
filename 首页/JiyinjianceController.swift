@@ -32,11 +32,11 @@ class JiyinjianceController: UIViewController  ,UITableViewDataSource,UITableVie
         if let tit = currentTitle{
             navigationItem.title = tit
         }
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(JiyinjianceController.back))
         let rBtn = UIButton(frame: CGRectMake(0,0,60,20))
         rBtn.setTitle("立即申请", forState: UIControlState.Normal)
         rBtn.titleLabel?.font = UIFont.systemFontOfSize(13)
-        rBtn.addTarget(self, action: "apply", forControlEvents: UIControlEvents.TouchUpInside)
+        rBtn.addTarget(self, action: #selector(JiyinjianceController.apply), forControlEvents: UIControlEvents.TouchUpInside)
         let rBar = UIBarButtonItem(customView: rBtn)
         navigationItem.rightBarButtonItem = rBar
     }

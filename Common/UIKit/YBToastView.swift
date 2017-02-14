@@ -100,7 +100,7 @@ class YBToastView: UIView {
         self.layoutIfNeeded()
         self.performTimer?.invalidate()
         if duration > 0 {
-            self.performTimer = NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: "dismiss", userInfo: nil, repeats: false)
+            self.performTimer = NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: #selector(YBToastView.dismiss), userInfo: nil, repeats: false)
         }
     }
     

@@ -114,7 +114,7 @@ class SeMobSlideTabView: UIView {
             if scrollview == nil {
                 sliderPortion = Double(value)
             }
-            for var i = 0; i < self.titles.count; i++ {
+            for i in 0 ..< self.titles.count {
                 if let label = self.viewWithTag(firstTabTag + i) as? UILabel {
                     if i != selectedIndex {
                         label.textColor = self.titleTextColor
@@ -168,14 +168,14 @@ class SeMobSlideTabView: UIView {
     override init(frame: CGRect) {
         sliderPortion = 0
         super.init(frame:frame)
-        let gr = UITapGestureRecognizer(target: self, action: "didTap:")
+        let gr = UITapGestureRecognizer(target: self, action: #selector(SeMobSlideTabView.didTap(_:)))
         self.addGestureRecognizer(gr)
     }
     
     required init?(coder aDecoder: NSCoder) {
         sliderPortion = 0
         super.init(coder:aDecoder)
-        let gr = UITapGestureRecognizer(target: self, action: "didTap:")
+        let gr = UITapGestureRecognizer(target: self, action: #selector(SeMobSlideTabView.didTap(_:)))
         self.addGestureRecognizer(gr)
     }
     
@@ -199,7 +199,7 @@ class SeMobSlideTabView: UIView {
     
     func relayout() {
         func relayoutTitleForAlignCenter() {
-            for var i = 0; i < self.titles.count; i++ {
+            for i in 0 ..< self.titles.count {
                 let label = UILabel()
                 label.tag = firstTabTag + i
                 label.text = self.titles[i]
@@ -219,7 +219,7 @@ class SeMobSlideTabView: UIView {
             }
         }
         func relayoutTitleForAlignFixMargin(left : CGFloat?, _ mid : CGFloat? , _ right : CGFloat?) {
-            for var i = 0; i < self.titles.count; i++ {
+            for i in 0 ..< self.titles.count {
                 // --label
                 let label = UILabel()
                 label.tag = firstTabTag + i
@@ -305,7 +305,7 @@ class SeMobSlideTabView: UIView {
         // slider
         self.createSlider()
         //text color
-        for var i = 0; i < self.titles.count; i++ {
+        for i in 0 ..< self.titles.count {
             if let label = self.viewWithTag(firstTabTag + i) as? UILabel {
                 if i != selectedIndex {
                     label.textColor = self.titleTextColor

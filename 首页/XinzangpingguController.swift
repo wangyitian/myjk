@@ -22,7 +22,7 @@ class XinzangpingguController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "心脏评估项目介绍"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(XinzangpingguController.back))
     }
     
     override func viewDidLoad() {

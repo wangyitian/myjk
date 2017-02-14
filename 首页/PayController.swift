@@ -115,11 +115,11 @@ class PayController: UIViewController, BeeCloudDelegate {
             let sureBt = UIButton(frame: CGRectMake(self.view.frame.width - 55,10, 40,20))
             cancleBt.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
             cancleBt.titleLabel?.font = UIFont.systemFontOfSize(13)
-            cancleBt.addTarget(self, action: "canclePickView", forControlEvents: UIControlEvents.TouchUpInside)
+            cancleBt.addTarget(self, action: #selector(PayController.canclePickView), forControlEvents: UIControlEvents.TouchUpInside)
             sureBt.setTitle("确定", forState: .Normal)
             sureBt.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
             sureBt.titleLabel?.font = UIFont.systemFontOfSize(13)
-            sureBt.addTarget(self, action: "finishSelected", forControlEvents: .TouchUpInside)
+            sureBt.addTarget(self, action: #selector(PayController.finishSelected), forControlEvents: .TouchUpInside)
             buView!.addSubview(sureBt)
             buView!.addSubview(cancleBt)
             pickView = UIPickerView(frame: CGRectMake(0,self.view.frame.height - 150, self.view.frame.width,194))
@@ -157,7 +157,7 @@ class PayController: UIViewController, BeeCloudDelegate {
         selectSub = pickView?.selectedRowInComponent(1)
         
         product_name.text = "高端体检-" + dataPro[selectProduct!]
-        product_sub.text = dataSub[selectSub!]["name"] as! String
+        product_sub.text = dataSub[selectSub!]["name"] as? String
         product_price.text = "￥\(dataSub[selectSub!]["price"] as! String)"
         canclePickView()
         changeBtn.setTitle("点击更改", forState: .Normal)
@@ -166,7 +166,7 @@ class PayController: UIViewController, BeeCloudDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "支 付"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(PayController.back))
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -225,7 +225,7 @@ class PayController: UIViewController, BeeCloudDelegate {
                     }
                     if self.dataSub.count > 0{
                         if let row = self.selectSub{
-                            self.product_sub.text = self.dataSub[row]["name"] as! String
+                            self.product_sub.text = self.dataSub[row]["name"] as? String
                             let str = self.dataSub[row]["price"] as! String
                             self.product_price.text = "￥" + str
                             self.changeBtn.setTitle("点击更改", forState: .Normal)
@@ -260,7 +260,7 @@ extension PayController:UIPickerViewDataSource,UIPickerViewDelegate{
         if component == 0{
             return dataPro[row]
         }else{
-            return dataSub[row]["name"] as! String
+            return dataSub[row]["name"] as? String
         }
     }
     

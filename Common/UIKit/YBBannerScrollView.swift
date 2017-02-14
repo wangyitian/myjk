@@ -92,7 +92,7 @@ class YBBannerScrollView: UIView, YBCycleScrollViewDelegate, UIScrollViewDelegat
     func recreateTimer() {
         innerTimer?.invalidate()
         if play && window != nil {
-            innerTimer = NSTimer.scheduledTimerWithTimeInterval(timeInterval, target: self, selector: "timerFire", userInfo: nil, repeats: true)
+            innerTimer = NSTimer.scheduledTimerWithTimeInterval(timeInterval, target: self, selector: #selector(YBBannerScrollView.timerFire), userInfo: nil, repeats: true)
         }
     }
     

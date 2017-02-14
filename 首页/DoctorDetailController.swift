@@ -18,7 +18,7 @@ class DoctorDetailController: UIViewController ,UITableViewDataSource,UITableVie
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "医生"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(DoctorDetailController.back))
     }
     
     override func viewDidLoad() {

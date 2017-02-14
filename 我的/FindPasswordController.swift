@@ -116,7 +116,7 @@ class FindPasswordController: UIViewController ,KeyboardScrollable{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+         navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(FindPasswordController.back))
         // Do any additional setup after loading the view.
     }
 

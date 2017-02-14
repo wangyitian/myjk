@@ -14,7 +14,7 @@ class XieYiController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+         navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(XieYiController.back))
         YBToastView.showLoadingToast(inView: view, blockSuperView: true)
         SharedNetWorkManager.GET(kagreementUrlString, parameters: nil, success: { (task, result) -> Void in
             YBToastView.hideLoadingToast()

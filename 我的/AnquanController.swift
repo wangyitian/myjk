@@ -19,7 +19,7 @@ class AnquanController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "账户安全"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(AnquanController.back))
         selectBtn.selected = true
         // Do any additional setup after loading the view.
     }

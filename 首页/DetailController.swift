@@ -23,13 +23,13 @@ class DetailController: UIViewController {
             return
         }
         navigationItem.title = tit
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(DetailController.back))
         let rBtn = UIButton()
         rBtn.frame = CGRectMake(0, 0, 18, 20)
         //rBtn.sizeToFit()
         rBtn.setBackgroundImage(UIImage(named: "share"), forState: .Normal)
             //setImage(UIImage(named: "share"), forState: .Normal)
-        rBtn.addTarget(self, action: "share", forControlEvents: UIControlEvents.TouchUpInside)
+        rBtn.addTarget(self, action: #selector(DetailController.share), forControlEvents: UIControlEvents.TouchUpInside)
         let rView = UIBarButtonItem(customView: rBtn)
         navigationItem.rightBarButtonItem = rView
     }
@@ -141,7 +141,6 @@ extension DetailController : UIWebViewDelegate {
                 return false
             default:
                 return true
-                break
             }
         }
         return true

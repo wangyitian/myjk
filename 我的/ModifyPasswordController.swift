@@ -59,7 +59,7 @@ class ModifyPasswordController: UIViewController ,KeyboardScrollable{
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "修改密码"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(ModifyPasswordController.back))
     }
     
     override func viewDidLoad() {

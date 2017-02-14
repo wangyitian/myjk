@@ -35,11 +35,11 @@ class JingmitijianController: UIViewController ,UITableViewDataSource,UITableVie
         if let tit = currentTitle{
             navigationItem.title = tit
         }
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(JingmitijianController.back))
         let rBtn = UIButton(frame: CGRectMake(0,0,60,20))
         rBtn.setTitle("立即申请", forState: UIControlState.Normal)
         rBtn.titleLabel?.font = UIFont.systemFontOfSize(13)
-        rBtn.addTarget(self, action: "appply", forControlEvents: UIControlEvents.TouchUpInside)
+        rBtn.addTarget(self, action: #selector(JingmitijianController.appply), forControlEvents: UIControlEvents.TouchUpInside)
         let rBar = UIBarButtonItem(customView: rBtn)
         navigationItem.rightBarButtonItem = rBar
     }

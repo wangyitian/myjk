@@ -19,13 +19,13 @@ class OrderController: UIViewController ,UITableViewDataSource,UITableViewDelega
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "服务订单"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(OrderController.back))
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "refreshOrder", name: "refreshOrder", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(OrderController.refreshOrder), name: "refreshOrder", object: nil)
         // Do any additional setup after loading the view.
     }
 

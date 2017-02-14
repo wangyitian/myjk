@@ -96,11 +96,11 @@ class KnowMoreController: UIViewController ,KeyboardScrollable,UITextFieldDelega
             let sureBt = UIButton(frame: CGRectMake(self.view.frame.width - 55,10, 40,20))
             cancleBt.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
             cancleBt.titleLabel?.font = UIFont.systemFontOfSize(13)
-            cancleBt.addTarget(self, action: "cancleDatePicker", forControlEvents: UIControlEvents.TouchUpInside)
+            cancleBt.addTarget(self, action: #selector(KnowMoreController.cancleDatePicker), forControlEvents: UIControlEvents.TouchUpInside)
             sureBt.setTitle("确定", forState: .Normal)
             sureBt.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
             sureBt.titleLabel?.font = UIFont.systemFontOfSize(13)
-            sureBt.addTarget(self, action: "finishDateSelect", forControlEvents: .TouchUpInside)
+            sureBt.addTarget(self, action: #selector(KnowMoreController.finishDateSelect), forControlEvents: .TouchUpInside)
             buView!.addSubview(sureBt)
             buView!.addSubview(cancleBt)
             datePicker = UIDatePicker(frame: CGRectMake(0,self.view.frame.height - 150, self.view.frame.width,194))
@@ -149,7 +149,7 @@ class KnowMoreController: UIViewController ,KeyboardScrollable,UITextFieldDelega
    
         
         navigationItem.title = "我想进一步了解精准医疗"
-        navigationItem.leftBarButtonItem = GetTopUIBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetTopUIBarButtonItem(self, action: #selector(KnowMoreController.back))
          sexBtn[0].selected = true
         // Do any additional setup after loading the view.
     }

@@ -32,13 +32,13 @@ class SamplesController: UIViewController ,UITableViewDataSource,UITableViewDele
         super.viewWillAppear(animated)
         parentViewController?.navigationItem.titleView = nil
         parentViewController?.navigationItem.title = "实 例"
-        parentViewController?.navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        parentViewController?.navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(SamplesController.back))
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "refreshCases:", name: "refreshCases", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SamplesController.refreshCases(_:)), name: "refreshCases", object: nil)
         let tableHeaderView = UIView();
         tableHeaderView.backgroundColor = UIColor.whiteColor();
         tableHeaderView.bounds = CGRect.init(x: 0, y: 0, width: self.view.bounds.width, height: 23);

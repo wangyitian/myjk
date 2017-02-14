@@ -21,7 +21,7 @@ class XingzhentijianController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "行政体检项目介绍"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(XingzhentijianController.back))
     }
     
     override func viewDidLoad() {

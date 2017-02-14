@@ -16,7 +16,7 @@ class HospitalController: UIViewController  ,UITableViewDataSource,UITableViewDe
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "医 院"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(HospitalController.back))
     }
     
     override func viewDidLoad() {
@@ -101,7 +101,7 @@ class HospitalController: UIViewController  ,UITableViewDataSource,UITableViewDe
                     }
                 }
             self.tableView.reloadData()
-            self.currentPage++
+            self.currentPage += 1
             
             }) { (task, error) -> Void in
                 print(error)

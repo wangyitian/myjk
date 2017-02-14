@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             return
         }
         
-        for var i = 0 ; i < tabBtns.count; i++ {
+        for i in 0  ..< tabBtns.count {
             
             if i != index {
                 tabBtns[i].selected = false

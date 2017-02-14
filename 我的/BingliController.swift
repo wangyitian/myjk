@@ -19,7 +19,7 @@ class BingliController: UIViewController ,UITableViewDataSource,UITableViewDeleg
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "病历管理"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(BingliController.back))
     }
 
     override func viewDidLoad() {
@@ -125,7 +125,7 @@ class BingliController: UIViewController ,UITableViewDataSource,UITableViewDeleg
                                             }
                                         }
                                     }else{
-                                        self.data["病症"] = sick["name"] as! String
+                                        self.data["病症"] = sick["name"] as? String
                                        
                                         
                                     }
@@ -161,7 +161,7 @@ class BingliController: UIViewController ,UITableViewDataSource,UITableViewDeleg
                                             }
                                         }
                                     }else{
-                                        self.data["住址"] = city["name"] as! String
+                                        self.data["住址"] = city["name"] as? String
                                         
                                     }
                                     break
