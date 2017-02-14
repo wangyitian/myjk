@@ -110,8 +110,8 @@
     sexlabel.textColor = [UIColor grayColor];
     [self.scrollView addSubview:sexlabel];
     UIButton *manButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [manButton setImage:[UIImage imageNamed:@"圆形选择框"] forState:UIControlStateNormal];
-    [manButton setImage:[UIImage imageNamed:@"圆形选择框（选中后）"] forState:UIControlStateSelected];
+    [manButton setImage:[UIImage imageNamed:@"选择套餐圆圈"] forState:UIControlStateNormal];
+    [manButton setImage:[UIImage imageNamed:@"选择套餐圆圈（选中后）"] forState:UIControlStateSelected];
     [manButton setTitle:@" 男" forState:UIControlStateNormal];
     manButton.titleLabel.font = [UIFont systemFontOfSize:13];
     manButton.tag = 7000;
@@ -120,8 +120,8 @@
     manButton.frame = CGRectMake(110, 110 + 16 + (36+16)*1, 50, 39);
     [self.scrollView addSubview:manButton];
     UIButton *womanButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [womanButton setImage:[UIImage imageNamed:@"圆形选择框"] forState:UIControlStateNormal];
-    [womanButton setImage:[UIImage imageNamed:@"圆形选择框（选中后）"] forState:UIControlStateSelected];
+    [womanButton setImage:[UIImage imageNamed:@"选择套餐圆圈"] forState:UIControlStateNormal];
+    [womanButton setImage:[UIImage imageNamed:@"选择套餐圆圈（选中后）"] forState:UIControlStateSelected];
     [womanButton setTitle:@" 女" forState:UIControlStateNormal];
     womanButton.titleLabel.font = [UIFont systemFontOfSize:13];
     womanButton.tag = 7001;
