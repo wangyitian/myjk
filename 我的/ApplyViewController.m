@@ -14,6 +14,9 @@
 #import "CityPickerView.h"
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define AlertTag    2000
+#define ButtonTag   1000
+#define LabelTag    3000
 #define ApplyURL    @"http://www.meiyujiankang.com/api/service.php"
 @interface ApplyViewController ()<UIScrollViewDelegate,UIAlertViewDelegate,UITextFieldDelegate>
 @property (nonatomic, strong) TPKeyboardAvoidingScrollView* scrollView;
@@ -77,7 +80,7 @@
         [btn setImage:[UIImage imageNamed:imageSelectedArray[i]] forState:UIControlStateSelected];
         CGFloat btnX = ScreenWidth/4*i + (ScreenWidth/4-60)/2;
         btn.frame = CGRectMake(btnX, 16, 60, 60);
-        btn.tag = 1000 + i;
+        btn.tag = ButtonTag + i;
         [btn addTarget:self action:@selector(type:) forControlEvents:UIControlEventTouchUpInside];
         [self.scrollView addSubview:btn];
         [self.buttonArray addObject:btn];
@@ -86,6 +89,7 @@
         label.text = titleArray[i];
         label.textAlignment = NSTextAlignmentCenter;
         label.font = [UIFont systemFontOfSize:13];
+        label.tag = LabelTag + i;
         [self.scrollView addSubview:label];
     }
 }
@@ -134,6 +138,7 @@
     phonelabel.textColor = [UIColor grayColor];
     [self.scrollView addSubview:phonelabel];
     self.phoneTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 110 + 16 + (36+16)*2, ScreenWidth - 110 - 30, 36)];
+    self.phoneTextField.keyboardType = UIKeyboardTypeNumberPad;
     [self addAttrsForTextField:self.phoneTextField placeholder:@"输入手机号码"];
     [self.scrollView addSubview:self.phoneTextField];
     
@@ -170,6 +175,8 @@
     self.saveButton.backgroundColor = [UIColor colorWithRed:105/255.0 green:191/255.0 blue:237/255.0 alpha:1.0];
     self.saveButton.titleLabel.font = [UIFont boldSystemFontOfSize:20];
     [self.saveButton setTitle:@"提 交" forState:UIControlStateNormal];
+    self.saveButton.layer.masksToBounds = YES;
+    self.saveButton.layer.cornerRadius = 3;
     [self.saveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.saveButton.frame = CGRectMake(45, CGRectGetMaxY(self.cityTextField.frame)+30, ScreenWidth-45*2, 36);
     [self.saveButton addTarget:self action:@selector(save) forControlEvents:UIControlEventTouchUpInside];
@@ -219,12 +226,18 @@
     if (btn.selected) {
         btn.selected = NO;
         self.type = @"";
+        UILabel *label = [self.view viewWithTag:btn.tag - ButtonTag + LabelTag];
+        label.textColor = [UIColor blackColor];
     } else {
         for (UIButton *button in self.buttonArray) {
             button.selected = NO;
+            UILabel *label = [self.view viewWithTag:button.tag - ButtonTag + LabelTag];
+            label.textColor = [UIColor blackColor];
         }
         btn.selected = YES;
-        self.type = [NSString stringWithFormat:@"%ld",btn.tag-1000+1];
+        self.type = [NSString stringWithFormat:@"%ld",btn.tag-ButtonTag+1];
+        UILabel *label = [self.view viewWithTag:btn.tag - ButtonTag + LabelTag];
+        label.textColor = [UIColor colorWithRed:105/255.0 green:191/255.0 blue:237/255.0 alpha:1.0];
     }
 }
 
@@ -276,7 +289,7 @@
             } else if ([res[@"status"] isEqualToString:@"1"]) {
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:res[@"message"] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
                 alert.delegate = self;
-                alert.tag = 2000;
+                alert.tag = AlertTag;
                 [alert show];
             }
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -292,7 +305,7 @@
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (alertView.tag == 2000) {
+    if (alertView.tag == AlertTag) {
         self.nameTextField.text = @"";
         self.gender = @"";
         self.phoneTextField.text = @"";
@@ -302,6 +315,8 @@
         for (UIButton *btn in self.buttonArray) {
             btn.selected = NO;
             self.type = @"";
+            UILabel *label = [self.view viewWithTag:btn.tag - ButtonTag + LabelTag];
+            label.textColor = [UIColor blackColor];
         }
         for (UIButton *btn in self.genderArray) {
             btn.selected = NO;

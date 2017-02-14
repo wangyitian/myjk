@@ -163,31 +163,47 @@ class ShouYePageController: UIViewController,UITableViewDataSource,UITableViewDe
 
             return cell
         }else if indexPath.section == 5{
-            if let cell = aboutUSCell  {
-                return cell
-            } else {
-                let cell = tableView.dequeueReusableCellWithIdentifier("onlineCell", forIndexPath: indexPath)
-                if let des = cell.viewWithTag(1009) as? UIWebView{
-                    des.loadHTMLString(aboutInfo, baseURL: nil)
-                    des.delegate = self
-                    des.scrollView.scrollEnabled = false
-                }
-                aboutUSCell = cell;
-                return cell
+//            if let cell = aboutUSCell  {
+//                return cell
+//            } else {
+//                let cell = tableView.dequeueReusableCellWithIdentifier("onlineCell", forIndexPath: indexPath)
+//                if let des = cell.viewWithTag(1009) as? UIWebView{
+//                    des.loadHTMLString(aboutInfo, baseURL: nil)
+//                    des.delegate = self
+//                    des.scrollView.scrollEnabled = false
+//                }
+//                aboutUSCell = cell;
+//                return cell
+//            }
+            let cell = tableView.dequeueReusableCellWithIdentifier("onlineCell", forIndexPath: indexPath)
+            if let des = cell.viewWithTag(1009) as? UIWebView{
+                des.loadHTMLString(aboutInfo, baseURL: nil)
+                des.delegate = self
+                des.scrollView.scrollEnabled = false
             }
+            aboutUSCell = cell;
+            return cell
         }else{
-            if let cell = contactUSCell  {
-                return cell
-            } else {
-                let cell = tableView.dequeueReusableCellWithIdentifier("onlineCell", forIndexPath: indexPath)
-                if let des = cell.viewWithTag(1009) as? UIWebView{
-                    des.loadHTMLString(contactInfo, baseURL: nil)
-                    des.delegate = self
-                    des.scrollView.scrollEnabled = false
-                }
-                contactUSCell = cell;
-                return cell
+//            if let cell = contactUSCell  {
+//                return cell
+//            } else {
+//                let cell = tableView.dequeueReusableCellWithIdentifier("onlineCell", forIndexPath: indexPath)
+//                if let des = cell.viewWithTag(1009) as? UIWebView{
+//                    des.loadHTMLString(contactInfo, baseURL: nil)
+//                    des.delegate = self
+//                    des.scrollView.scrollEnabled = false
+//                }
+//                contactUSCell = cell;
+//                return cell
+//            }
+            let cell = tableView.dequeueReusableCellWithIdentifier("onlineCell", forIndexPath: indexPath)
+            if let des = cell.viewWithTag(1009) as? UIWebView{
+                des.loadHTMLString(contactInfo, baseURL: nil)
+                des.delegate = self
+                des.scrollView.scrollEnabled = false
             }
+            contactUSCell = cell;
+            return cell
         }
         
     }

@@ -39,6 +39,10 @@ class SamplesController: UIViewController ,UITableViewDataSource,UITableViewDele
         super.viewDidLoad()
         fetchData()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "refreshCases:", name: "refreshCases", object: nil)
+        let tableHeaderView = UIView();
+        tableHeaderView.backgroundColor = UIColor.whiteColor();
+        tableHeaderView.bounds = CGRect.init(x: 0, y: 0, width: self.view.bounds.width, height: 23);
+        self.tableView.tableHeaderView = tableHeaderView;
         // Do any additional setup after loading the view.
     }
 
@@ -86,8 +90,9 @@ class SamplesController: UIViewController ,UITableViewDataSource,UITableViewDele
 //            return height + 23
 //        }
 //        return 108
-        return 23
+        return 0
     }
+    
     
 //    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?{
 //        guard dataSicks.keys.count > 0 else {
