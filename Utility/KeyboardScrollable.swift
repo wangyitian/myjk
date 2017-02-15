@@ -40,8 +40,8 @@ extension KeyboardScrollable where Self : NSObject {
         objc_setAssociatedObject(self, &ReceiverAssociateKey, receiver, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 
         keyboardScrollView.keyboardDismissMode = .Interactive
-        NSNotificationCenter.defaultCenter().addObserver(receiver, selector: "keyBoardDidShow:", name: UIKeyboardDidShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(receiver, selector: "keyBoardDidHide:", name: UIKeyboardDidHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(receiver, selector: #selector(KeyboardScrollableNotificationReceiver.keyBoardDidShow(_:)), name: UIKeyboardDidShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(receiver, selector: #selector(KeyboardScrollableNotificationReceiver.keyBoardDidHide(_:)), name: UIKeyboardDidHideNotification, object: nil)
     }
     
     func disableKeyboardScrollable() {

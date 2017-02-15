@@ -40,7 +40,7 @@ class ModifyInfoController: UIViewController ,UITextFieldDelegate,UIPickerViewDa
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "个人信息"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(ModifyInfoController.back))
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -156,11 +156,11 @@ class ModifyInfoController: UIViewController ,UITextFieldDelegate,UIPickerViewDa
             let sureBt = UIButton(frame: CGRectMake(self.view.frame.width - 55,10, 40,20))
             cancleBt.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
             cancleBt.titleLabel?.font = UIFont.systemFontOfSize(13)
-            cancleBt.addTarget(self, action: "canleSickView", forControlEvents: UIControlEvents.TouchUpInside)
+            cancleBt.addTarget(self, action: #selector(ModifyInfoController.canleSickView), forControlEvents: UIControlEvents.TouchUpInside)
             sureBt.setTitle("确定", forState: .Normal)
             sureBt.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
             sureBt.titleLabel?.font = UIFont.systemFontOfSize(13)
-            sureBt.addTarget(self, action: "finishSelectSick", forControlEvents: .TouchUpInside)
+            sureBt.addTarget(self, action: #selector(ModifyInfoController.finishSelectSick), forControlEvents: .TouchUpInside)
             buView!.addSubview(sureBt)
             buView!.addSubview(cancleBt)
             pickView = UIPickerView(frame: CGRectMake(0,self.view.frame.height - 150, self.view.frame.width,194))
@@ -201,11 +201,11 @@ class ModifyInfoController: UIViewController ,UITextFieldDelegate,UIPickerViewDa
             let sureBt = UIButton(frame: CGRectMake(self.view.frame.width - 55,10, 40,20))
             cancleBt.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
             cancleBt.titleLabel?.font = UIFont.systemFontOfSize(13)
-            cancleBt.addTarget(self, action: "cancleDatePicker", forControlEvents: UIControlEvents.TouchUpInside)
+            cancleBt.addTarget(self, action: #selector(ModifyInfoController.cancleDatePicker), forControlEvents: UIControlEvents.TouchUpInside)
             sureBt.setTitle("确定", forState: .Normal)
             sureBt.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
             sureBt.titleLabel?.font = UIFont.systemFontOfSize(13)
-            sureBt.addTarget(self, action: "finishDateSelect", forControlEvents: .TouchUpInside)
+            sureBt.addTarget(self, action: #selector(ModifyInfoController.finishDateSelect), forControlEvents: .TouchUpInside)
             buView!.addSubview(sureBt)
             buView!.addSubview(cancleBt)
             datePicker = UIDatePicker(frame: CGRectMake(0,self.view.frame.height - 150, self.view.frame.width,194))
@@ -269,11 +269,11 @@ class ModifyInfoController: UIViewController ,UITextFieldDelegate,UIPickerViewDa
             let subName = id[currentSubRow]["name"] as! String
             sickBtn.setTitle(sickname + " " + subName, forState: UIControlState.Normal)
             sickBtn.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
-            sicksId = id[currentSubRow]["linkageid"] as! String
+            sicksId = id[currentSubRow]["linkageid"] as? String
         }else{
-            sickBtn.setTitle(dataSicks[currentRow]["name"] as! String, forState: UIControlState.Normal)
+            sickBtn.setTitle(dataSicks[currentRow]["name"] as? String, forState: UIControlState.Normal)
             sickBtn.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
-            sicksId = dataSicks[currentRow]["linkageid"] as! String
+            sicksId = dataSicks[currentRow]["linkageid"] as? String
         }
         canleSickView()
     }
@@ -332,11 +332,11 @@ class ModifyInfoController: UIViewController ,UITextFieldDelegate,UIPickerViewDa
             let sureBt = UIButton(frame: CGRectMake(self.view.frame.width - 55,10, 40,20))
             cancleBt.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
             cancleBt.titleLabel?.font = UIFont.systemFontOfSize(13)
-            cancleBt.addTarget(self, action: "canleSickView", forControlEvents: UIControlEvents.TouchUpInside)
+            cancleBt.addTarget(self, action: #selector(ModifyInfoController.canleSickView), forControlEvents: UIControlEvents.TouchUpInside)
             sureBt.setTitle("确定", forState: .Normal)
             sureBt.setTitleColor(UIColor(hexString: "343434"), forState: UIControlState.Normal)
             sureBt.titleLabel?.font = UIFont.systemFontOfSize(13)
-            sureBt.addTarget(self, action: "finishSelectCity", forControlEvents: .TouchUpInside)
+            sureBt.addTarget(self, action: #selector(ModifyInfoController.finishSelectCity), forControlEvents: .TouchUpInside)
             buView!.addSubview(sureBt)
             buView!.addSubview(cancleBt)
             pickView = UIPickerView(frame: CGRectMake(0,self.view.frame.height - 150, self.view.frame.width,194))
@@ -360,11 +360,11 @@ class ModifyInfoController: UIViewController ,UITextFieldDelegate,UIPickerViewDa
             let subName = id[currentSubRow]["name"] as! String
             cityName.text = sickname + " " + subName
             cityName.textColor = UIColor(hexString: "343434")
-            cityId = id[currentSubRow]["linkageid"] as! String
+            cityId = id[currentSubRow]["linkageid"] as? String
         }else{
-           cityName.text = dataCitys[currentRow]["name"] as! String
+           cityName.text = dataCitys[currentRow]["name"] as? String
             cityName.textColor = UIColor(hexString: "343434")
-            cityId = dataCitys[currentRow]["linkageid"] as! String
+            cityId = dataCitys[currentRow]["linkageid"] as? String
         }
         canleSickView()
 
@@ -454,12 +454,12 @@ class ModifyInfoController: UIViewController ,UITextFieldDelegate,UIPickerViewDa
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?{
         if component == 0{
-            return data[row]["name"] as! String
+            return data[row]["name"] as? String
         }else{
             guard let id = subDatas[data[currentRow]["linkageid"] as! String] else {
                 return "空"
             }
-            return id[row]["name"] as! String
+            return id[row]["name"] as? String
         }
         
     }

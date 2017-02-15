@@ -165,7 +165,7 @@ class SamplesController: UIViewController ,UITableViewDataSource,UITableViewDele
             
             if !self.finish{
                 self.tableView.reloadData()
-                self.currentPage++
+                self.currentPage += 1
             }
             if objs.count < 10{
                 self.finish = true

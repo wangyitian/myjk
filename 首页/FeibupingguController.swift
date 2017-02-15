@@ -22,7 +22,7 @@ class FeibupingguController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.title = "肺部状况评估项目介绍"
-        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: "back")
+        navigationItem.leftBarButtonItem = GetLeftBarButtonItem(self, action: #selector(FeibupingguController.back))
     }
     
     override func viewDidLoad() {
