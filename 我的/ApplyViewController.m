@@ -50,10 +50,16 @@
 }
 
 - (void)initNavigation {
-    self.navigationItem.title = @"申请";
+    self.navigationItem.title = @"申 请";
     UIImage *back = [UIImage imageNamed:@"back"];
     back = [back imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:back style:UIBarButtonItemStyleDone target:self action:@selector(back)];
+    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setImage:back forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    backButton.frame = CGRectMake(0, 20, 70, 44);
+    backButton.imageEdgeInsets = UIEdgeInsetsMake(12, 9, 12, 49);
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
 }
 
 - (void)back {
