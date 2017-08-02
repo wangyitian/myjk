@@ -47,7 +47,6 @@ func AdjustCertainViewHeightToMin(inview view : UIView){
             }
         }
         certainview = view.viewWithTag(++certainTag)
-        
     }
 }
 
